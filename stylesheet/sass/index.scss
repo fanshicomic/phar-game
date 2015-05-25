@@ -1,0 +1,38 @@
+@import "compass/css3";
+
+@mixin lg {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+header {
+    background: #1ABC9C;
+    .game-row {
+        margin-top: 50px;
+        .game-sec {
+            
+            .game-icon {
+                height: 150px;
+            }
+        }
+    }
+}

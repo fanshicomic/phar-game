@@ -1,0 +1,12 @@
+/* line 27, ../sass/index.scss */
+header {
+  background: #1ABC9C;
+}
+/* line 29, ../sass/index.scss */
+header .game-row {
+  margin-top: 50px;
+}
+/* line 33, ../sass/index.scss */
+header .game-row .game-sec .game-icon {
+  height: 150px;
+}

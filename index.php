@@ -1,8 +1,10 @@
 <?php
-    require_once($_SERVER['DOCUMENT_ROOT'] .'/pharmacy/project1/php/controller/navbar_controller.php');
     if(!isset($_SESSION)){
         session_start();
     }
+    $_SESSION['PATH'] = '/pharmacology/games';
+    require_once($_SERVER['DOCUMENT_ROOT'] .$_SESSION['PATH'].'/php/controller/navbar_controller.php');
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +15,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-	<title>Adherence Actitvity</title>
-	<link rel="icon" href="/pharmacy/project1/img/AA-icon.ico">
+	<title>Learning Games</title>
+	<link rel="icon" href="/img/AA-icon.ico">
 
 	<!-- JQuery -->
 	<script src="plugin/jQuery/jquery-2.1.3.min.js"></script>
@@ -47,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                <a class="navbar-brand page-scroll" href="#">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,119 +61,34 @@
 
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Adherence Activity</h1>
-                <hr>
-                <p>The NUS department of pharmacology built a new online system to help the students quickly understand the importance of adherence.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Learn More</a>
+            <div class="header-content-inner container">
+                <h1>Learning Games</h1>
+                    <div class="row game-row">
+                        <div class="game-sec col-lg-3 text-center">
+                            <img src="img/matching-icon.png" class="game-icon">
+                            <h3>Matching game</h3>
+                            <a href="#"><h4>Lecture 2</h4></a>
+                            <a href="#"><h4>Lecture 4</h4></a>
+                        </div>
+                        <div class="game-sec col-lg-3 text-center">
+                            <img src="img/hangman-icon.png" class="game-icon">
+                            <h3>Hangman</h3>
+                            <a href="#"><h4>Lecture 3</h4></a>
+                            <a href="#"><h4>Lecture 7</h4></a>
+                        </div>
+                        <div class="game-sec col-lg-3 text-center">
+                            <img src="img/crossword-icon.png" class="game-icon">
+                            <h3>Crossword</h3>
+                            <a href="#"><h4>Lecture 5</h4></a>
+                            <a href="#"><h4>Lecture 6</h4></a>
+                        </div>
+                        <div class="game-sec col-lg-3 text-center">
+                            <img src="img/matching-icon.png" class="game-icon">
+                        </div>
+                    </div>
             </div>
         </div>
     </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h3 class="section-heading">HIV and antiretroviral therapy</h3>
-                    <hr class="light">
-                    <p class="text-faded">HIV (human immunodeficiency virus) infection is incurable; no treatment can eradicate the virus from the body. It is not a lethal disease by itself, but if untreated, HIV can gradually weaken the immune system until it is no longer functional. At this point, the patient has AIDS (acquired immune deficiency syndrome), and other types of infections can easily occur.</p>
-                    <p class="text-faded">HIV antiretroviral drug therapy can suppress HIV and delay the onset of AIDS for many years.</p>
-                    <p class="text-faded">Because HIV has a high mutation rate, treating a patient with only one drug can inadvertently select for a mutant drug- resistant strain of HIV . Multi-drug therapies are prescribed so that even if a mutant strain resistant to one drug arises, it will still be suppressed by the other drugs.</p>
-                </div>
-            </div>
-        	</div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h3 class="section-heading">What is adherence? Why is it important?</h3>
-                    <hr class="light">
-                    <p class="text-faded">Adherence is the measure of how well a patient sticks to a treatment program.</p>
-                    <p class="text-faded">In HIV antiretroviral therapy, it is very important to adhere to the treatment program to keep the virus suppressed. If the drug treatment is interrupted for any reason, there is a risk that the number of viruses in the body will rebound and include drug-resistant strains. Therefore, in the long run, poorly adhering to treatment may be worse than not being treated at all.</p>
-                </div>
-			</div>
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h3 class="section-heading">Activity instructions</h3>
-                    <hr class="light">
-                    <p class="text-faded">In this activity, you will participate in a simulation of HIV antiretroviral drug therapy. You will experience firsthand how easy or difficult it is to fully adhere to a treatment program.</p>
-                    <p class="text-faded">You have been assigned one of three treatment protocols of varying complexity. One aim of the study is to see if students adhere better to simpler treatment protocols.</p>
-                    <p class="text-faded">Check the enclosed activity data sheet for your protocol assignment. Instead of actual retroviral drugs, you will use substitutes: tic tac mints. Follow the protocol for 7 days and take the simulated “medicine” at appropriate times.</p>
-                    <p class="text-faded">On the activity data sheet, record the time and the date each time you take a dose of “medicine. ” Keep the record honestly and accurately. This is not a contest to see who’s best at adhering to the treatment protocol.</p>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-lg-12 text-center">
-            		<a href="#protocol" id="btn-to-protocol" class="btn btn-default btn-xl page-scroll">Get Started!</a>
-            	</div>
-            </div>       
-        </div>
-    </section>
-
-    <section id="protocol">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Choose an HIV and antiretroviral therapy Protocol</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <div class="service-box">
-                        <img class="protocol-image wow bounceIn text-primary" src="img/pills-blue-icon.png">
-                        <h3>protocol 1</h3>
-                        <p class="text-muted">Drug name: Truvada, Reyataz & Norvir</p>
-                        <a href="php/view/protocol_1.php" class="btn btn-primary btn-md btn-protocol">View</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="service-box">
-                        <img class="protocol-image wow bounceIn text-primary" src="img/pills-green-icon.png">
-                        <h3>protocol 2</h3>
-                        <p class="text-muted">Drug name: Fuzeon, Kaletra & Combivir</p>
-                        <a href="php/view/protocol_2.php" class="btn btn-primary btn-md btn-protocol">View</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <div class="service-box">
-                        <img class="protocol-image wow bounceIn text-primary" src="img/pills-orange-icon.png">
-                        <h3>protocol 3</h3>
-                        <p class="text-muted">Drug name: Atripla</p>
-                        <a href="php/view/protocol_3.php" class="btn btn-primary btn-md btn-protocol">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h3>Download our mobile app on the App store!</h3>
-                <a href="#" class="btn btn-default btn-lg btn-download wow tada">Download Now!</a>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>9864-6408</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">fanshicomic@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Plugin JavaScript -->
     <script src="javascript/creative/jquery.easing.min.js"></script>
