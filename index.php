@@ -67,7 +67,7 @@
                         <div class="game-sec col-lg-3 text-center">
                             <img src="img/matching-icon.png" class="game-icon">
                             <h3>Matching game</h3>
-                            <a href="#"><h4>Lecture 2</h4></a>
+                            <a href="/pharmacology/games/php/view/matching_game/lec_2.php"><h4>Lecture 2</h4></a>
                             <a href="#"><h4>Lecture 4</h4></a>
                         </div>
                         <div class="game-sec col-lg-3 text-center">
