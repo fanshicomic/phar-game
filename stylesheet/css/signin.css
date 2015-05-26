@@ -1,0 +1,26 @@
+/* line 27, ../sass/signin.scss */
+
+a {
+	color: #f05f40;
+}
+
+.form-signin {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px 70px 50px 70px;
+}
+/* line 31, ../sass/signin.scss */
+.form-signin .signin-welcome {
+  margin-bottom: 40px;
+}
+/* line 34, ../sass/signin.scss */
+.form-signin .signin-form-input {
+  margin-top: 20px;
+}
+/* line 40, ../sass/signin.scss */
+.form-signin .btn-full {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}

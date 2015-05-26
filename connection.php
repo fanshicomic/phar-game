@@ -1,5 +1,5 @@
 <?php
-	require_once ($_SERVER['DOCUMENT_ROOT'] .'/pharmacy/project1/config.php');
+	require_once ($_SERVER['DOCUMENT_ROOT'] .'/pharmacology/games/config.php');
 	
 	if(!isset($_SESSION)){
         session_start();

@@ -10,6 +10,9 @@ $(function() {
 	$(".sub-element").click(function() {
 		handle_element_clicking_event(this);
 	});
+	$(".btn-reset").click(function() {
+		game_reset();
+	})
 });
 
 function toggle_border(svg) {
@@ -82,5 +85,9 @@ function connect(e1, e2) {
 }
 
 function game_reset() {
-
+	first = "";
+	second = "";
+	beta = new Array();
+	non_beta = new Array();
+	$("#lines").html("");
 }

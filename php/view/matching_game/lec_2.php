@@ -4,6 +4,11 @@
         $_SESSION['PATH'] = '/pharmacology/games';
     }
     require_once($_SERVER['DOCUMENT_ROOT'] .$_SESSION['PATH'].'/php/controller/navbar_controller.php');
+    if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
+         
+    } else {
+        header("Location: /pharmacology/games/php/view/signin.php");
+    }
     
 ?>
 <!DOCTYPE html>
@@ -49,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#">Home</a>
+                <a class="navbar-brand page-scroll" href="../../../index.php">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -123,8 +128,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <a href="#" class="col-lg-offset-3 col-lg-2 btn btn-default btn-lg btn-submit">Reset</a>
+                <div class="row btn-row">
+                    <a href="#" class="col-lg-offset-3 col-lg-2 btn btn-default btn-lg btn-reset">Reset</a>
                     <a href="#" class="col-lg-offset-2 col-lg-2 btn btn-primary btn-lg btn-submit">Submit</a>
                 </div>   
             </div>
