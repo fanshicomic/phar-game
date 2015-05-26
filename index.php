@@ -1,8 +1,8 @@
 <?php
     if(!isset($_SESSION)){
         session_start();
+        $_SESSION['PATH'] = '/pharmacology/games';
     }
-    $_SESSION['PATH'] = '/pharmacology/games';
     require_once($_SERVER['DOCUMENT_ROOT'] .$_SESSION['PATH'].'/php/controller/navbar_controller.php');
     
 ?>

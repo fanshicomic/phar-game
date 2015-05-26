@@ -1,6 +1,7 @@
 <?php
     if(!isset($_SESSION)){
         session_start();
+        $_SESSION['PATH'] = '/pharmacology/games';
     }
     require_once($_SERVER['DOCUMENT_ROOT'] .$_SESSION['PATH'].'/php/controller/navbar_controller.php');
     
@@ -66,52 +67,57 @@
                 <div class="game-sec">
                     <div class="row">
                         <div class="col-lg-offset-1 col-lg-5 text-center">
-                            <svg height="80" width="200">
-                                <ellipse cx="100" cy="40" rx="100" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="202" id="beta-lactam">
+                                <ellipse class="main-element" cx="101" cy="41" rx="100" ry="40" style="fill:yellow;" />
                                 <text x="35" y="47" fill="#1ABC9C" font-size="23px">Beta-lactam</text>
                             </svg>
                         </div>
                         <div class="col-lg-5 text-center">
-                            <svg height="80" width="220">
-                                <ellipse cx="110" cy="40" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="non-beta-lactam">
+                                <ellipse class="main-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="25" y="47" fill="#1ABC9C" font-size="23px">Non Beta-lactam</text>
                             </svg>
                         </div>
                     </div>
+                    <div class="row">
+                        <svg id='lines' height='50px' class="col-lg-12">
+                            
+                        </svg>
+                    </div>
                     <div class="row sub-group">
                         <div class="col-lg-2 text-center">
-                            <svg height="60" width="100">
-                                <ellipse cx="50" cy="30" rx="50" ry="30" style="fill:#ECF0F1;" />
+                            <svg height="62" width="102" id="penicillins">
+                                <ellipse class="sub-element" cx="51" cy="31" rx="50" ry="30" style="fill:#ECF0F1;" />
                                 <text x="18" y="35" fill="#1ABC9C" font-size="15px">Penicillins</text>
                             </svg>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <svg height="60" width="100">
-                                <ellipse cx="50" cy="30" rx="50" ry="30" style="fill:#ECF0F1;" />
+                            <svg height="62" width="102" id="oxapenams">
+                                <ellipse class="sub-element" cx="51" cy="31" rx="50" ry="30" style="fill:#ECF0F1;" />
                                 <text x="10" y="35" fill="#1ABC9C" font-size="15px">Oxapenams</text>
                             </svg>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <svg height="60" width="140">
-                                <ellipse cx="70" cy="30" rx="70" ry="30" style="fill:#ECF0F1;" />
+                            <svg height="62" width="142" id="cephalosporins">
+                                <ellipse class="sub-element" cx="71" cy="31" rx="70" ry="30" style="fill:#ECF0F1;" />
                                 <text x="18" y="35" fill="#1ABC9C" font-size="15px">Cephalosporins</text>
                             </svg>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <svg height="60" width="120">
-                                <ellipse cx="60" cy="30" rx="60" ry="30" style="fill:#ECF0F1;" />
+                            <svg height="62" width="122" id="carbapenems">
+                                <ellipse class="sub-element" cx="61" cy="31" rx="60" ry="30" style="fill:#ECF0F1;" />
                                 <text x="15" y="35" fill="#1ABC9C" font-size="15px">Carbapenems</text>
                             </svg>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <svg height="60" width="120">
-                                <ellipse cx="60" cy="30" rx="60" ry="30" style="fill:#ECF0F1;" />
+                            <svg height="62" width="122" id="monobactams">
+                                <ellipse class="sub-element" cx="61" cy="31" rx="60" ry="30" style="fill:#ECF0F1;" />
                                 <text x="13" y="35" fill="#1ABC9C" font-size="15px">Monobactams</text>
                             </svg>
                         </div>
                         <div class="col-lg-2 text-center">
-                            <svg height="60" width="110">
-                                <ellipse cx="55" cy="30" rx="55" ry="30" style="fill:#ECF0F1;" />
+                            <svg height="62" width="112" id="glycopeptide">
+                                <ellipse class="sub-element" cx="55" cy="30" rx="55" ry="30" style="fill:#ECF0F1;" />
                                 <text x="13" y="35" fill="#1ABC9C" font-size="15px">Glycopeptide</text>
                             </svg>
                         </div>
@@ -132,6 +138,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/pharmacology/games/javascript/creative/creative.js"></script>
-
+    <script src="/pharmacology/games/javascript/matching/matching.js"></script>
+    <script src="/pharmacology/games/javascript/matching/canvas.js"></script>
 </body>
 </html>

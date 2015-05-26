@@ -8,19 +8,23 @@ header .header-content .header-content-inner h1 {
 }
 /* line 32, ../sass/lec_2.scss */
 header .header-content .header-content-inner p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* line 37, ../sass/lec_2.scss */
 .game-sec {
-  padding: 20px 30px 20px 30px;
+  padding: 0px 30px 20px 30px;
 }
 /* line 41, ../sass/lec_2.scss */
-.game-sec .sub-group {
-  margin-top: 50px;
+.game-sec .main-element {
+  cursor: pointer;
+}
+/* line 45, ../sass/lec_2.scss */
+.game-sec .sub-group .sub-element {
+  cursor: pointer;
 }
 
-/* line 46, ../sass/lec_2.scss */
+/* line 51, ../sass/lec_2.scss */
 .btn-submit {
   margin-top: 50px;
 }
