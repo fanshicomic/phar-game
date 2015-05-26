@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <svg id='lines' height='50px' class="col-lg-12">
+                        <svg id='lines' height='80px' class="col-lg-12">
                             
                         </svg>
                     </div>
