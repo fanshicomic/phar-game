@@ -76,13 +76,13 @@
                 <p>This matching game is for the topic <i>bacteria cell wall synthesis inhibitors (main group).</i> There are several main groups (on the top) and several sub groups (on the bottom). Base on you understanding, matching each sub group to its corresponding main group by clicking the two of them, and a line will be drawn to connect them. Clicking the submit buttom to submit your answer.</p>
                 <div class="game-sec">
                     <div class="row">
-                        <div class="col-lg-offset-1 col-lg-5 text-center">
+                        <div class="col-xs-offset-1 col-xs-5 text-center">
                             <svg height="82" width="202" id="beta-lactam">
                                 <ellipse class="main-element" cx="101" cy="41" rx="100" ry="40" style="fill:yellow;" />
                                 <text x="35" y="47" fill="#1ABC9C" font-size="23px">Beta-lactam</text>
                             </svg>
                         </div>
-                        <div class="col-lg-5 text-center">
+                        <div class="col-xs-5 text-center">
                             <svg height="82" width="222" id="non-beta-lactam">
                                 <ellipse class="main-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="25" y="47" fill="#1ABC9C" font-size="23px">Non Beta-lactam</text>
@@ -90,53 +90,17 @@
                         </div>
                     </div>
                     <div class="row">
-                        <svg id='lines' height='80px' class="col-lg-12">
+                        <svg id='lines' height='80px' class="col-xs-12">
                             
                         </svg>
                     </div>
                     <div class="row sub-group">
-                        <!-- <div class="col-lg-2 text-center">
-                            <svg height="62" width="102" id="penicillins">
-                                <ellipse class="sub-element" cx="51" cy="31" rx="50" ry="30" style="fill:#ECF0F1;" />
-                                <text x="18" y="35" fill="#1ABC9C" font-size="15px">Penicillins</text>
-                            </svg>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <svg height="62" width="102" id="oxapenams">
-                                <ellipse class="sub-element" cx="51" cy="31" rx="50" ry="30" style="fill:#ECF0F1;" />
-                                <text x="10" y="35" fill="#1ABC9C" font-size="15px">Oxapenams</text>
-                            </svg>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <svg height="62" width="142" id="cephalosporins">
-                                <ellipse class="sub-element" cx="71" cy="31" rx="70" ry="30" style="fill:#ECF0F1;" />
-                                <text x="18" y="35" fill="#1ABC9C" font-size="15px">Cephalosporins</text>
-                            </svg>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <svg height="62" width="122" id="carbapenems">
-                                <ellipse class="sub-element" cx="61" cy="31" rx="60" ry="30" style="fill:#ECF0F1;" />
-                                <text x="15" y="35" fill="#1ABC9C" font-size="15px">Carbapenems</text>
-                            </svg>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <svg height="62" width="122" id="monobactams">
-                                <ellipse class="sub-element" cx="61" cy="31" rx="60" ry="30" style="fill:#ECF0F1;" />
-                                <text x="13" y="35" fill="#1ABC9C" font-size="15px">Monobactams</text>
-                            </svg>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <svg height="62" width="112" id="glycopeptide">
-                                <ellipse class="sub-element" cx="55" cy="30" rx="55" ry="30" style="fill:#ECF0F1;" />
-                                <text x="13" y="35" fill="#1ABC9C" font-size="15px">Glycopeptide</text>
-                            </svg>
-                        </div> -->
                         <?php randomize_game2(); ?>
                     </div>
                 </div>
                 <div class="row btn-row">
-                    <a href="#" class="col-lg-offset-3 col-lg-2 btn btn-default btn-lg btn-reset">Reset</a>
-                    <a href="#" class="col-lg-offset-2 col-lg-2 btn btn-primary btn-lg btn-submit" lec="2">Submit</a>
+                    <a href="#" class="col-xs-offset-3 col-xs-2 btn btn-default btn-lg btn-reset">Reset</a>
+                    <a href="#" class="col-xs-offset-2 col-xs-2 btn btn-primary btn-lg btn-submit" lec="2">Submit</a>
                 </div>   
             </div>
         </div>

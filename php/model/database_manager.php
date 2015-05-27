@@ -77,4 +77,11 @@
         }
         return false;
     }
+
+    function update_game_score($lecture, $score) {
+        $uid = get_user_id($_SESSION['uid']);
+        $query = "UPDATE USER SET LEC".$lecture." = $score WHERE UID = '$uid'";
+        $res = update_data($query);
+        return $res;
+    }
 ?>
