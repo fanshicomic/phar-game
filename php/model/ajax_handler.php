@@ -10,7 +10,6 @@
 		if ($lecture == "1") {
 
 		} else if ($lecture == "2") {
-
 			$beta = json_decode($_REQUEST['beta'], true);
 			$non_beta = json_decode($_REQUEST['non_beta'], true);
 			$score = calculate_game2_score($beta, $non_beta);

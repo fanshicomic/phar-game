@@ -111,19 +111,20 @@ function submit_answer(btn) {
 	    			    non_beta: JSON.stringify(non_beta)
 	    			},
 	    	success	: function(data) {
-				score = data;
+				
 			}
 		});
+		window.location.href="/pharmacology/games/php/view/matching_game/lec_2_answer.php?beta="+JSON.stringify(beta)+"&non_beta="+JSON.stringify(non_beta);
 	} else if (lec == "4") {
 
 	} else {
 
 	}
-	return show_score(score);
+	// return show_score(score);
 }
 
 function show_score(score) {
-	swal("success",
-		"Your score is " + score + " .",
-		"success");
+	// swal("success",
+	// 	"Your score is " + score + " .",
+	// 	"success");
 }
