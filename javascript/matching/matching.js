@@ -12,7 +12,10 @@ $(function() {
 	});
 	$(".btn-reset").click(function() {
 		game_reset();
-	})
+	});
+	$(".btn-submit").click(function() {
+		submit_answer(this);
+	});
 });
 
 function toggle_border(svg) {
@@ -73,8 +76,10 @@ function connect(e1, e2) {
 		}
 		if ($(main).attr("id") == "beta-lactam") {
 			beta.push($(sub).attr("id"));
-		} else {
+		} else if ($(main).attr("id") == "non-beta-lactam") {
 			non_beta.push($(sub).attr("id"));
+		} else {
+
 		}
 		draw_line(main, sub);
 		toggle_border(e1);
@@ -90,4 +95,35 @@ function game_reset() {
 	beta = new Array();
 	non_beta = new Array();
 	$("#lines").html("");
+}
+
+function submit_answer(btn) {
+	var lec = $(btn).attr("lec");
+	var score;
+	if (lec == "2") {
+		$.ajax({
+			async	: false,
+			type	:'POST', 
+	    	url		: "/pharmacology/games/php/model/ajax_handler.php",
+	    	data    : {	cmd 	: 'submit_answer',
+	    			   	lecture	: lec,
+	    			    beta 	: JSON.stringify(beta),
+	    			    non_beta: JSON.stringify(non_beta)
+	    			},
+	    	success	: function(data) {
+				score = data;
+			}
+		});
+	} else if (lec == "4") {
+
+	} else {
+
+	}
+	return show_score(score);
+}
+
+function show_score(score) {
+	swal("success",
+		"Your score is " + score + " .",
+		"success");
 }

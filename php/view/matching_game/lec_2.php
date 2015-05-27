@@ -37,6 +37,10 @@
     <link rel="stylesheet" href="/pharmacology/games/stylesheet/css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="/pharmacology/games/stylesheet/css/creative.css" type="text/css">
 
+    <!-- SweetAlert -->
+    <script src="../../../plugin/SweetAlert/sweetalert.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="../../../plugin/SweetAlert/sweetalert.css">
+
 	<!-- Customized Stylesheet -->
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/font.css">
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/lec_2.css">
@@ -130,7 +134,7 @@
                 </div>
                 <div class="row btn-row">
                     <a href="#" class="col-lg-offset-3 col-lg-2 btn btn-default btn-lg btn-reset">Reset</a>
-                    <a href="#" class="col-lg-offset-2 col-lg-2 btn btn-primary btn-lg btn-submit">Submit</a>
+                    <a href="#" class="col-lg-offset-2 col-lg-2 btn btn-primary btn-lg btn-submit" lec="2">Submit</a>
                 </div>   
             </div>
         </div>

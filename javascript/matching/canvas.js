@@ -31,5 +31,5 @@ function draw_line(main, sub) {
 	    line.setAttribute('x2', (sx - mx)/times + +line.getAttribute('x2'));
 	    if (count++ > times)
 	        window.clearInterval(interval);
-	}, 15);
+	}, 5);
 }
