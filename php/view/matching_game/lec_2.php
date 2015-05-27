@@ -4,6 +4,7 @@
         $_SESSION['PATH'] = '/pharmacology/games';
     }
     require_once($_SERVER['DOCUMENT_ROOT'] .$_SESSION['PATH'].'/php/controller/navbar_controller.php');
+    require_once($_SERVER['DOCUMENT_ROOT'] .$_SESSION['PATH'].'/php/model/game_manager.php');
     if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
          
     } else {
@@ -94,7 +95,7 @@
                         </svg>
                     </div>
                     <div class="row sub-group">
-                        <div class="col-lg-2 text-center">
+                        <!-- <div class="col-lg-2 text-center">
                             <svg height="62" width="102" id="penicillins">
                                 <ellipse class="sub-element" cx="51" cy="31" rx="50" ry="30" style="fill:#ECF0F1;" />
                                 <text x="18" y="35" fill="#1ABC9C" font-size="15px">Penicillins</text>
@@ -129,7 +130,8 @@
                                 <ellipse class="sub-element" cx="55" cy="30" rx="55" ry="30" style="fill:#ECF0F1;" />
                                 <text x="13" y="35" fill="#1ABC9C" font-size="15px">Glycopeptide</text>
                             </svg>
-                        </div>
+                        </div> -->
+                        <?php randomize_game2(); ?>
                     </div>
                 </div>
                 <div class="row btn-row">
