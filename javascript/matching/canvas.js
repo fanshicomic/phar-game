@@ -1,4 +1,4 @@
-var height = $("#lines").height() - 10;
+var height = $("#lines-1").height() - 10;
 var left = parseInt($(".sub-group").position().left);
 
 function parseSVG(s) {
@@ -10,8 +10,8 @@ function parseSVG(s) {
     return frag;
 }
 
-function draw_line(main, sub) {
-	var id = $(sub).attr("id");
+function draw_line(main, sub, sec) {
+	var id = $(main).attr("id") + $(sub).attr("id");
 
 	var main_cx = parseInt($($(main).children()[0]).attr("cx"));
 	var sub_cx = parseInt($($(sub).children()[0]).attr("cx"));
@@ -22,7 +22,7 @@ function draw_line(main, sub) {
 	var mx = main_cx + main_left - left;
 	var sx = sub_cx + sub_left - left;
 	var svg = '<line id="myLine-'+id+'" x1="'+mx+'" y1="5" x2="'+mx+'" y2="0" stroke-width="2" stroke="red"/>';
-	document.getElementById('lines').appendChild(parseSVG(svg));
+	document.getElementById('lines-'+sec).appendChild(parseSVG(svg));
 	var line = document.getElementById('myLine-'+ id);
 	var count = 0;
 	var times = 100;

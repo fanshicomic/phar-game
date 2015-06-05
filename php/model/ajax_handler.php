@@ -11,12 +11,15 @@
 		if ($lecture == "1") {
 
 		} else if ($lecture == "2") {
-			$beta = json_decode($_REQUEST['beta'], true);
-			$non_beta = json_decode($_REQUEST['non_beta'], true);
-			$score = calculate_game2_score($beta, $non_beta);
+			$ans = json_decode($_REQUEST['ans'], true);
+			$score = calculate_game2_score($ans);
 			echo update_game_score($lecture, $score);
-		} else {
+		} else if ($lecture == "3") {
 
+		} else if ($lecture == "4") {
+			$ans = json_decode($_REQUEST['ans'], true);
+			$score = calculate_game4_score($ans);
+			echo update_game_score($lecture, $score);
 		}
 	}
 ?>

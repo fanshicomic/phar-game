@@ -11,9 +11,8 @@
         header("Location: /pharmacology/games/php/view/signin.php");
     }
 
-	$beta = json_decode($_REQUEST['beta'], true);
-	$non_beta = json_decode($_REQUEST['non_beta'], true);
-	$score = calculate_game2_score($beta, $non_beta);
+	$ans = json_decode($_REQUEST['ans'], true);
+	$score = calculate_game2_score($ans);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,8 +78,9 @@
 	                <img src="/pharmacology/games/img/score-logo.png" height="80px">
 	                <label class="score">: <?php echo $score; ?></label>
 	            </div>
-                <div class="game-sec">
-                    <div class="row">
+                <div class="game-sec row col-lg-12 text-center">
+                    <?php show_game2_answer($ans); ?>
+                    <!-- <div class="row">
                         <div class="col-lg-offset-1 col-lg-5 text-center">
                             <svg height="82" width="202" id="beta-lactam">
                                 <ellipse class="main-element" cx="101" cy="41" rx="100" ry="40" style="fill:yellow;" />
@@ -171,8 +171,8 @@
                             <ul class="text-left">
                                 <li>Vancomycin</li>
                             </ul>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> -->
                 </div>
             </div>
         </div>

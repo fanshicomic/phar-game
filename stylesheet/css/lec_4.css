@@ -1,35 +1,35 @@
-/* line 27, ../sass/lec_2.scss */
+/* line 27, ../sass/lec_4.scss */
 header {
   background: #1ABC9C;
 }
-/* line 29, ../sass/lec_2.scss */
+/* line 29, ../sass/lec_4.scss */
 header .header-content .header-content-inner h1 {
   margin-bottom: 10px;
 }
-/* line 32, ../sass/lec_2.scss */
+/* line 32, ../sass/lec_4.scss */
 header .header-content .header-content-inner p {
   margin-bottom: 20px;
 }
 
-/* line 37, ../sass/lec_2.scss */
+/* line 37, ../sass/lec_4.scss */
 .game-sec {
   padding: 0px 30px 20px 30px;
 }
-/* line 41, ../sass/lec_2.scss */
-.game-sec .exp-element {
+/* line 41, ../sass/lec_4.scss */
+.game-sec .main-element {
   cursor: pointer;
 }
-/* line 45, ../sass/lec_2.scss */
+/* line 45, ../sass/lec_4.scss */
 .game-sec .sub-group .sub-element {
   cursor: pointer;
 }
 
-/* line 51, ../sass/lec_2.scss */
+/* line 51, ../sass/lec_4.scss */
 .btn-row {
   margin-top: 30px;
 }
 
-/* line 55, ../sass/lec_2.scss */
+/* line 57, ../sass/lec_4.scss */
 .fa-chevron-circle-left {
   position: absolute;
   left: 8%;
@@ -37,7 +37,7 @@ header .header-content .header-content-inner p {
   cursor: pointer;
 }
 
-/* line 62, ../sass/lec_2.scss */
+/* line 64, ../sass/lec_4.scss */
 .fa-chevron-circle-right {
   position: absolute;
   right: 8%;

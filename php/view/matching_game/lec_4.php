@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-	<title>Learning Games Lecture 2</title>
+	<title>Learning Games Lecture 4</title>
 	<link rel="icon" href="/pharmacology/games/img/AA-icon.ico">
 
 	<!-- JQuery -->
@@ -44,7 +44,7 @@
 
 	<!-- Customized Stylesheet -->
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/font.css">
-	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/lec_2.css">
+	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/lec_4.css">
 </head>
 
 <body id="page-top">
@@ -72,7 +72,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner container">
-                <h1>Lecture 2</h1>
+                <h1>Lecture 4</h1>
                 <p class="text-left"><b style="color:white">Objective</b>: This game is to test your ability to recognize the different groups of drugs belonging to the bacterial cell wall synthesis inhibitors. The fullmark for this game is 100.
                 <br><b style="color:white">Aim</b>: Match the subgroups to their corresponding drug examples by clicking the ellipses, a line will be drawn to connect them;
                 <br><b style="color:white">Target</b>: You need to complete all <b style="color:yellow">three</b> sections as it is part of your CA grades.</p>
