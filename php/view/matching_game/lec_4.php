@@ -73,8 +73,8 @@
         <div class="header-content">
             <div class="header-content-inner container">
                 <h1>Lecture 4</h1>
-                <p class="text-left"><b style="color:white">Objective</b>: This game is to test your ability to recognize the different groups of drugs belonging to the bacterial cell wall synthesis inhibitors. The fullmark for this game is 100.
-                <br><b style="color:white">Aim</b>: Match the subgroups to their corresponding drug examples by clicking the ellipses, a line will be drawn to connect them;
+                <p class="text-left"><b style="color:white">Objective</b>: This game is to test your ability to recognize the different groups of drugs  to treat urinary tract infections or urinary antiseptics. The fullmark for this game is 100.
+                <br><b style="color:white">Aim</b>: Match the subgroups to their corresponding drug examples, mechanism of action and their adverse effects by clicking the ellipses, a line will be drawn to connect them;
                 <br><b style="color:white">Target</b>: You need to complete all <b style="color:yellow">three</b> sections as it is part of your CA grades.</p>
                 <div class="game-sec sec-1">
                     <!-- <div class="row text-center">
@@ -82,27 +82,27 @@
                     </div> -->
                     <div class="row sub-group">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="penicillins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Penicillins</text>
+                            <svg height="82" width="222" id="sulphonamides" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Sulphonamides</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cephalosporins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cephalosporins</text>
+                            <svg height="82" width="222" id="cotrimoxazole" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cotrimoxazole</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="carbapenems">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Carbapenems</text>
+                            <svg height="82" width="222" id="fluoroquinolones" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Fluoroquinolones</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="monobactams">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Monobactams</text>
+                            <svg height="82" width="222" id="nitrofurantoin" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Nitrofurantoin</text>
                             </svg>
                         </div>
                     </div>
@@ -114,27 +114,27 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="aztreonam">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Aztreonam</text>
+                            <svg height="82" width="222" id="ciprofloxacin"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Ciprofloxacin</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="imipenem">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Imipenem</text>
+                            <svg height="82" width="222" id="sulphamethoazole"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Sulphamethoazole</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="amoxicillin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Amoxicillin</text>
+                            <svg height="82" width="222" id="furadantin"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Furadantin®</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cefazolin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cefazolin</text>
+                            <svg height="82" width="222" id="septrin"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Septrin®</text>
                             </svg>
                         </div>
                     </div>
@@ -142,27 +142,27 @@
                 <div class="game-sec sec-2" style="display:none">
                     <div class="row sub-group">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="penicillins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Penicillins</text>
+                            <svg height="82" width="222" id="sulphonamides" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Sulphonamides</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="oxapenams">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Oxapenams</text>
+                            <svg height="82" width="222" id="trimethoprim" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Trimethoprim</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="carbapenems">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Carbapenems</text>
+                            <svg height="82" width="222" id="fluoroquinolones" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Fluoroquinolones</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="glycopeptide">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Glycopeptide</text>
+                            <svg height="82" width="222" id="nitrofurantoin" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Nitrofurantoin</text>
                             </svg>
                         </div>
                     </div>
@@ -175,27 +175,43 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="meropenem">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Meropenem</text>
+                            <svg height="82" width="222" id="inhibit dihydrofolate reductase"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="20px">
+                                    <tspan x="111" dy="-20">Inhibit</tspan>
+                                    <tspan x="111" dy="20">dihydrofolate</tspan>
+                                    <tspan x="111" dy="20">reductase</tspan>
+                                </text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="sulbactam">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Sulbactam</text>
+                            <svg height="82" width="222" id="blocking DNA gyrase and topoisomerase IV"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="18px">
+                                    <tspan x="111" dy="-25">Blocking</tspan>
+                                    <tspan x="111" dy="20">DNA gyrase and</tspan>
+                                    <tspan x="111" dy="20">topoisomerase IV</tspan>
+                                </text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cloxacillin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cloxacillin</text>
+                            <svg height="82" width="222" id="inhibit dihydropteroate synthetase"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="20px">
+                                    <tspan x="111" dy="-20">Inhibit</tspan>
+                                    <tspan x="111" dy="20">dihydropteroate</tspan>
+                                    <tspan x="111" dy="20">synthetase</tspan>
+                                </text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="vancomycin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Vancomycin</text>
+                            <svg height="82" width="222" id="damage bacterial DNA and ribosomal proteins"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="18px">
+                                    <tspan x="111" dy="-25">Damage</tspan>
+                                    <tspan x="111" dy="20">bacterial DNA and</tspan>
+                                    <tspan x="111" dy="20">ribosomal proteins</tspan>
+                                </text>
                             </svg>
                         </div>
                     </div>
@@ -203,27 +219,27 @@
                 <div class="game-sec sec-3" style="display:none">
                     <div class="row sub-group">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="penicillins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Penicillins</text>
+                            <svg height="82" width="222" id="sulphonamides" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Sulphonamides</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="oxapenams">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Oxapenams</text>
+                            <svg height="82" width="222" id="trimethoprim" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Trimethoprim</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="carbapenems">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Carbapenems</text>
+                            <svg height="82" width="222" id="fluoroquinolones" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Fluoroquinolones</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cephalosporin">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cephalosporin</text>
+                            <svg height="82" width="222" id="nitrofurantoin" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Nitrofurantoin</text>
                             </svg>
                         </div>
                     </div>
@@ -235,34 +251,44 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="flucloxacillin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Flucloxacillin</text>
+                            <svg height="82" width="222" id="megaloblastic anemia and granulocytopenia"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="15px">
+                                    <tspan x="111" dy="-25">megaloblastic</tspan>
+                                    <tspan x="111" dy="20">anemia and</tspan>
+                                    <tspan x="111" dy="20">granulocytopenia</tspan>
+                                </text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="tienem">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Tienem</text>
+                            <svg height="82" width="222" id="peripheral neuropathy"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">
+                                    <tspan x="111" dy="-10">peripheral</tspan>
+                                    <tspan x="111" dy="25">neuropathy</tspan>
+                                </text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cefuroxime">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cefuroxime</text>
+                            <svg height="82" width="222" id="GIT disturbances"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">GIT disturbances</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="clavulanic">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
-                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Clavulanic acid</text>
+                            <svg height="82" width="222" id="Steven-Johnson syndrome"class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                                <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">
+                                    <tspan x="111" dy="-5">Steven-Johnson</tspan>
+                                    <tspan x="111" dy="25">syndrome</tspan>
+                                </text>
                             </svg>
                         </div>
                     </div>
                 </div>
                 <div class="row btn-row">
                     <a href="#" class="col-xs-offset-3 col-xs-2 btn btn-default btn-lg btn-reset">Reset</a>
-                    <a href="#" class="col-xs-offset-2 col-xs-2 btn btn-primary btn-lg btn-submit" lec="2">Submit</a>
+                    <a href="#" class="col-xs-offset-2 col-xs-2 btn btn-primary btn-lg btn-submit" lec="4">Submit</a>
                 </div>   
             </div>
         </div>

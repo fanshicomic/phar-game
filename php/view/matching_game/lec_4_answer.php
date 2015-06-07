@@ -11,9 +11,10 @@
         header("Location: /pharmacology/games/php/view/signin.php");
     }
 
-	$anti = json_decode($_REQUEST['anti'], true);
-    $dna = json_decode($_REQUEST['dna'], true);
-    $score = calculate_game4_score($anti, $dna);
+	// 
+    $ans = urldecode($_REQUEST['ans']);
+    $ans = json_decode($ans, true);
+    $score = calculate_game4_score($ans);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,8 +80,9 @@
 	                <img src="/pharmacology/games/img/score-logo.png" height="80px">
 	                <label class="score">: <?php echo $score; ?></label>
 	            </div>
-                <div class="game-sec">
-                    <div class="row">
+                <div class="game-sec row col-lg-12 text-center">
+                    <?php show_game4_answer($ans); ?>
+                    <!-- <div class="row">
                         <div class="col-xs-offset-1 col-xs-5 text-center">
                             <svg height="82" width="232" id="antifolate-agents">
                                 <ellipse class="main-element" cx="116" cy="41" rx="116" ry="41" style="fill:yellow;" />
@@ -154,7 +156,7 @@
                                 <li>Furadantin®</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
