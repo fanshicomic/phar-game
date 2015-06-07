@@ -82,26 +82,26 @@
                     </div> -->
                     <div class="row sub-group">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="penicillins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="penicillins" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Penicillins</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cephalosporins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="cephalosporins" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cephalosporins</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="carbapenems">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="carbapenems" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Carbapenems</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="monobactams">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="monobactams" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Monobactams</text>
                             </svg>
                         </div>
@@ -114,26 +114,26 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="aztreonam">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="aztreonam" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Aztreonam</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="imipenem">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="imipenem" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Imipenem</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="amoxicillin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="amoxicillin" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Amoxicillin</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cefazolin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="cefazolin" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cefazolin</text>
                             </svg>
                         </div>
@@ -142,26 +142,26 @@
                 <div class="game-sec sec-2" style="display:none">
                     <div class="row sub-group">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="penicillins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="penicillins" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Penicillins</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="oxapenams">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="oxapenams" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Oxapenams</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="carbapenems">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="carbapenems" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Carbapenems</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="glycopeptide">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="glycopeptide" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Glycopeptide</text>
                             </svg>
                         </div>
@@ -175,26 +175,26 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="meropenem">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="meropenem" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Meropenem</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="sulbactam">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="sulbactam" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Sulbactam</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cloxacillin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="cloxacillin" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cloxacillin</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="vancomycin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="vancomycin" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Vancomycin</text>
                             </svg>
                         </div>
@@ -203,26 +203,26 @@
                 <div class="game-sec sec-3" style="display:none">
                     <div class="row sub-group">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="penicillins">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="penicillins" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Penicillins</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="oxapenams">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="oxapenams" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Oxapenams</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="carbapenems">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="carbapenems" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Carbapenems</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cephalosporin">
-                                <ellipse class="sub-element" cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
+                            <svg height="82" width="222" id="cephalosporin" class="sub-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:yellow;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cephalosporin</text>
                             </svg>
                         </div>
@@ -235,26 +235,26 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="flucloxacillin">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="flucloxacillin" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Flucloxacillin</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="tienem">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="tienem" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Tienem</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="cefuroxime">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="cefuroxime" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Cefuroxime</text>
                             </svg>
                         </div>
                         <div class="col-xs-3 text-center">
-                            <svg height="82" width="222" id="clavulanic">
-                                <ellipse class="exp-element" cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
+                            <svg height="82" width="222" id="clavulanic" class="exp-element">
+                                <ellipse cx="111" cy="41" rx="110" ry="40" style="fill:white;" />
                                 <text x="111" y="47" text-anchor="middle" fill="#1ABC9C" font-size="23px">Clavulanic acid</text>
                             </svg>
                         </div>

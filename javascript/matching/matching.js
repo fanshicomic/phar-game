@@ -34,14 +34,14 @@ function toggle_border(svg) {
 }
 
 function handle_element_clicking_event(element) {
-	// if (beta.length + non_beta.length < 7 && anti.length + dna.length < 6) {
 	if (true) {
+		element = $(element).children()[0];
 		toggle_border(element);
 		if (first != "") {
 			if (first == element) {
-
+				first = "";
 			} else {
-				if (is_same_level(element, first)) {
+				if (is_same_level($(element).parent(), $(first).parent())) {
 					toggle_border(first);
 					first = element;
 				} else {
@@ -64,6 +64,8 @@ function is_same_level(e1, e2) {
 }
 
 function connect(e1, e2) {
+	e1 = $(e1).parent();
+	e2 = $(e2).parent();
 	if (is_same_level(e1, e2)) {
 		swal({   
 	    title: "Error!",   
@@ -79,18 +81,18 @@ function connect(e1, e2) {
 		var is_e1_sub = $(e1).attr("class") == "sub-element";
 		var is_e2_sub = $(e2).attr("class") == "sub-element";
 		if (is_e1_sub) {
-			var sub = $(e1).parent();
-			var exp = $(e2).parent();
+			var sub = e1;
+			var exp = e2;
 		} else {
-			var sub = $(e2).parent();
-			var exp = $(e1).parent();
+			var sub = e2;
+			var exp = e1;
 		}
 		var sub_id = $(sub).attr("id");
 		var exp_id = $(exp).attr("id");
 		ans.push([sub_id, exp_id]);
 		draw_line(sub, exp, current_section);
-		toggle_border(e1);
-		toggle_border(e2);
+		toggle_border($(e1).children()[0]);
+		toggle_border($(e2).children()[0]);
 		first = "";
 		second = "";
 	}

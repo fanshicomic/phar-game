@@ -38,28 +38,39 @@
 		return $score;
 	}
 
-	function calculate_game4_score($anti, $dna) {
+	function calculate_game4_score($ans) {
 		$score = 0;
-		$count = 0;
-		$ans_anti = array("sulphonamides", "trimethoprim", "cotrimoxazole");
-		$ans_dna = array("fluoroquinolones", "nitrofurantoin");
-		foreach ($anti as $element) {
-			if (in_array($element, $ans_anti)) {
-				$count += 1;
-				unset($ans_anti[$element]);
-			} else {
+		// var_dump($ans); 
+		if (count($ans) > 12) {
+			$score = 0;
+		} else {
+			$count = 0;
 
+			$real_ans = array(array("sulphonamides","sulphamethoazole"),
+						array("cotrimoxazole","septrin"),
+						array("fluoroquinolones","ciprofloxacin"),
+						array("nitrofurantoin","furadantin"),
+						array("sulphonamides","inhibit dihydropteroate synthetase"),
+						array("trimethoprim","inhibit dihydrofolate reductase"),
+						array("fluoroquinolones","blocking DNA gyrase and topoisomerase IV"),
+						array("nitrofurantoin","damage bacterial DNA and ribosomal proteins"),
+						array("sulphonamides","Steven-Johnson syndrome"),
+						array("trimethoprim","megaloblastic anemia and granulocytopenia"),
+						array("fluoroquinolones","peripheral neuropathy"),
+						array("nitrofurantoin","GIT disturbances"));
+			for ($i = 0; $i < count($ans); $i++) {
+				if (in_array($ans[$i], $real_ans)) {
+					$count += 1;
+					$key = array_search($ans[$i], $real_ans);
+					unset($real_ans[$key]);
+				}
+			}
+			if ($count == 12) {
+				$score = 100;
+			} else {
+				$score = floor(100 * $count / 12);
 			}
 		}
-		foreach ($dna as $element) {
-			if (in_array($element, $ans_dna)) {
-				$count += 1;
-				unset($ans_dna[$element]);
-			} else {
-
-			}
-		}
-		$score = floor(100 * $count / 5);
 		return $score;
 	}
 
@@ -104,6 +115,34 @@
 						  array("oxapenams","clavulanic"),
 						  array("carbapenems","tienem"),
 						  array("cephalosporin","cefuroxime"));
+		foreach ($ans as $element) {
+			if (!in_array($element, $real_ans)) {
+				array_push($wrong_ans, $element);
+			} else {
+					
+			}
+		}
+		echo "<h2 style='color:orange'>Your wrong answers:</h2>";
+		echo "<h4 style='color:orange'>Please check your textbook to find out the correct answers</h4>";
+		foreach ($wrong_ans as $element) {
+			echo "<div class='col-xs-offset-3 col-xs-4 text-left' style='font-size: 18px'>sub group: ".$element[0]. "</div><div class='col-xs-4 text-left' style='font-size: 18px'>Example: ".$element[1]."</div>";
+		}
+	}
+
+	function show_game4_answer($ans) {
+		$wrong_ans = array();
+		$real_ans = array(array("sulphonamides","sulphamethoazole"),
+						array("cotrimoxazole","septrin"),
+						array("fluoroquinolones","ciprofloxacin"),
+						array("nitrofurantoin","furadantin"),
+						array("sulphonamides","inhibit dihydropteroate synthetase"),
+						array("trimethoprim","inhibit dihydrofolate reductase"),
+						array("fluoroquinolones","blocking DNA gyrase and topoisomerase IV"),
+						array("nitrofurantoin","damage bacterial DNA and ribosomal proteins"),
+						array("sulphonamides","Steven-Johnson syndrome"),
+						array("trimethoprim","megaloblastic anemia and granulocytopenia"),
+						array("fluoroquinolones","peripheral neuropathy"),
+						array("nitrofurantoin","GIT disturbances"));
 		foreach ($ans as $element) {
 			if (!in_array($element, $real_ans)) {
 				array_push($wrong_ans, $element);
