@@ -124,9 +124,13 @@ function game_reset() {
 function submit_answer(btn) {
 	var lec = $(btn).attr("lec");
 	var score;
-	if (ans.length > 12) {
+	if (ans.length > $(".sub-element").length) {
 		swal("Error",
-			"You can't select more than 12 pairs",
+			"You can't select more than "+ $(".sub-element").length +" pairs",
+			"error");
+	} else if (ans.length < $(".sub-element").length) {
+		swal("Error",
+			"You haven't completed all the sections",
 			"error");
 	} else {
 		$.ajax({
