@@ -3,12 +3,7 @@
 
 	function calculate_game2_score($ans) {
 		$score = 0;
-		if (count($ans) > 12) {
-			$score = 0;
-		} else {
-			$count = 0;
-			
-			$real_ans = array(array("penicillins","amoxicillin"),
+		$real_ans = array(array("penicillins","amoxicillin"),
 						array("cephalosporins","cefazolin"),
 						array("carbapenems","imipenem"),
 						array("monobactams","aztreonam"),
@@ -20,6 +15,11 @@
 						array("oxapenams","clavulanic"),
 						array("carbapenems","tienem"),
 						array("cephalosporin","cefuroxime"));
+		if (count($ans) > count($real_ans)) {
+			$score = 0;
+		} else {
+			$count = 0;
+			
 			foreach ($ans as $element) {
 				if (in_array($element, $real_ans)) {
 					$count += 1;
@@ -40,13 +40,7 @@
 
 	function calculate_game4_score($ans) {
 		$score = 0;
-		// var_dump($ans); 
-		if (count($ans) > 12) {
-			$score = 0;
-		} else {
-			$count = 0;
-
-			$real_ans = array(array("sulphonamides","sulphamethoazole"),
+		$real_ans = array(array("sulphonamides","sulphamethoazole"),
 						array("cotrimoxazole","septrin"),
 						array("fluoroquinolones","ciprofloxacin"),
 						array("nitrofurantoin","furadantin"),
@@ -58,6 +52,10 @@
 						array("trimethoprim","megaloblastic anemia and granulocytopenia"),
 						array("fluoroquinolones","peripheral neuropathy"),
 						array("nitrofurantoin","GIT disturbances"));
+		if (count($ans) > count($real_ans)) {
+			$score = 0;
+		} else {
+			$count = 0;
 			for ($i = 0; $i < count($ans); $i++) {
 				if (in_array($ans[$i], $real_ans)) {
 					$count += 1;
@@ -69,6 +67,39 @@
 				$score = 100;
 			} else {
 				$score = floor(100 * $count / 12);
+			}
+		}
+		return $score;
+	}
+
+	function calculate_game7_score($ans) {
+		$score = 0;
+		$real_ans = array(array("Nucleoside RTIs","Zidovudine"),
+						array("Non-nucleoside RTIs","Efavirenz"),
+						array("Protease inhibitors","Ritonavir"),
+						array("Entry Inhibitors","Maraviroc"),
+						array("Fusion Inhibitors","Raltegravir"),
+						array("Nucleoside RTIs","Combidir"),
+						array("Non-nucleoside RTIs","Nevi rapine"),
+						array("Protease inhibitors","Kaletra"),
+						array("Nucleoside RTIs","Tenofovir"),
+						array("Non-nucleoside RTIs","Etravirine"),
+						array("Protease inhibitors","Lopinavir"));
+		if (count($ans) > count($real_ans)) {
+			$score = 0;
+		} else {
+			$count = 0;
+			for ($i = 0; $i < count($ans); $i++) {
+				if (in_array($ans[$i], $real_ans)) {
+					$count += 1;
+					$key = array_search($ans[$i], $real_ans);
+					unset($real_ans[$key]);
+				}
+			}
+			if ($count == 11) {
+				$score = 100;
+			} else {
+				$score = floor(100 * $count / 11);
 			}
 		}
 		return $score;
@@ -122,10 +153,14 @@
 					
 			}
 		}
-		echo "<h2 style='color:orange'>Your wrong answers:</h2>";
-		echo "<h4 style='color:orange'>Please check your textbook to find out the correct answers</h4>";
-		foreach ($wrong_ans as $element) {
-			echo "<div class='col-xs-offset-3 col-xs-4 text-left' style='font-size: 18px'>sub group: ".$element[0]. "</div><div class='col-xs-4 text-left' style='font-size: 18px'>Example: ".$element[1]."</div>";
+		if (count($wrong_ans) > 0) {
+			echo "<h2 style='color:orange'>Your wrong answers:</h2>";
+			echo "<h4 style='color:orange'>Please check your textbook to find out the correct answers</h4>";
+			foreach ($wrong_ans as $element) {
+				echo "<div class='col-xs-offset-3 col-xs-4 text-left' style='font-size: 18px'>sub group: ".$element[0]. "</div><div class='col-xs-4 text-left' style='font-size: 18px'>Example: ".$element[1]."</div>";
+			}
+		} else {
+			echo "<h2 style='color:yellow'>Congratulations! You got the fullmark!</h2>";
 		}
 	}
 
@@ -150,10 +185,45 @@
 					
 			}
 		}
-		echo "<h2 style='color:orange'>Your wrong answers:</h2>";
-		echo "<h4 style='color:orange'>Please check your textbook to find out the correct answers</h4>";
-		foreach ($wrong_ans as $element) {
-			echo "<div class='col-xs-offset-3 col-xs-4 text-left' style='font-size: 18px'>sub group: ".$element[0]. "</div><div class='col-xs-4 text-left' style='font-size: 18px'>Example: ".$element[1]."</div>";
+		if (count($wrong_ans) > 0) {
+			echo "<h2 style='color:orange'>Your wrong answers:</h2>";
+			echo "<h4 style='color:orange'>Please check your textbook to find out the correct answers</h4>";
+			foreach ($wrong_ans as $element) {
+				echo "<div class='col-xs-offset-3 col-xs-4 text-left' style='font-size: 18px'>sub group: ".$element[0]. "</div><div class='col-xs-4 text-left' style='font-size: 18px'>Example: ".$element[1]."</div>";
+			}
+		} else {
+			echo "<h2 style='color:yellow'>Congratulations! You got the fullmark!</h2>";
+		}
+	}
+
+	function show_game7_answer($ans) {
+		$wrong_ans = array();
+		$real_ans = array(array("Nucleoside RTIs","Zidovudine"),
+						array("Non-nucleoside RTIs","Efavirenz"),
+						array("Protease inhibitors","Ritonavir"),
+						array("Entry Inhibitors","Maraviroc"),
+						array("Fusion Inhibitors","Raltegravir"),
+						array("Nucleoside RTIs","Combidir"),
+						array("Non-nucleoside RTIs","Nevi rapine"),
+						array("Protease inhibitors","Kaletra"),
+						array("Nucleoside RTIs","Tenofovir"),
+						array("Non-nucleoside RTIs","Etravirine"),
+						array("Protease inhibitors","Lopinavir"));
+		foreach ($ans as $element) {
+			if (!in_array($element, $real_ans)) {
+				array_push($wrong_ans, $element);
+			} else {
+					
+			}
+		}
+		if (count($wrong_ans) > 0) {
+			echo "<h2 style='color:orange'>Your wrong answers:</h2>";
+			echo "<h4 style='color:orange'>Please check your textbook to find out the correct answers</h4>";
+			foreach ($wrong_ans as $element) {
+				echo "<div class='col-xs-offset-3 col-xs-4 text-left' style='font-size: 18px'>sub group: ".$element[0]. "</div><div class='col-xs-4 text-left' style='font-size: 18px'>Example: ".$element[1]."</div>";
+			}
+		} else {
+			echo "<h2 style='color:yellow'>Congratulations! You got the fullmark!</h2>";
 		}
 	}
 ?>

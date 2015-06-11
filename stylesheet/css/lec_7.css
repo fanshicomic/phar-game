@@ -1,0 +1,46 @@
+/* line 27, ../sass/lec_7.scss */
+header {
+  background: #1ABC9C;
+}
+/* line 29, ../sass/lec_7.scss */
+header .header-content .header-content-inner h1 {
+  margin-bottom: 10px;
+}
+/* line 32, ../sass/lec_7.scss */
+header .header-content .header-content-inner p {
+  margin-bottom: 20px;
+}
+
+/* line 37, ../sass/lec_7.scss */
+.game-sec {
+  padding: 0px 30px 20px 30px;
+}
+/* line 41, ../sass/lec_7.scss */
+.game-sec .exp-element {
+  cursor: pointer;
+}
+/* line 45, ../sass/lec_7.scss */
+.game-sec .sub-group .sub-element {
+  cursor: pointer;
+}
+
+/* line 51, ../sass/lec_7.scss */
+.btn-row {
+  margin-top: 30px;
+}
+
+/* line 55, ../sass/lec_7.scss */
+.fa-chevron-circle-left {
+  position: absolute;
+  left: 8%;
+  top: 55%;
+  cursor: pointer;
+}
+
+/* line 62, ../sass/lec_7.scss */
+.fa-chevron-circle-right {
+  position: absolute;
+  right: 8%;
+  top: 55%;
+  cursor: pointer;
+}

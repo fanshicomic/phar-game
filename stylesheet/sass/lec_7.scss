@@ -1,0 +1,67 @@
+@import "compass/css3";
+
+@mixin lg {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+header {
+    background: #1ABC9C;
+    .header-content .header-content-inner h1 {
+        margin-bottom: 10px;
+    }
+    .header-content .header-content-inner p {
+        margin-bottom: 20px;
+    }
+}
+
+.game-sec {
+    // border: 5px solid white;
+    // border-radius: 20px;
+    padding: 0px 30px 20px 30px;
+    .exp-element {
+        cursor: pointer;
+    }
+    .sub-group {
+        .sub-element {
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-row {
+    margin-top: 30px;
+}
+
+.fa-chevron-circle-left {
+    position: absolute;
+    left: 8%;
+    top: 55%;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-right {
+    position: absolute;
+    right: 8%;
+    top: 55%;
+    cursor: pointer;
+}

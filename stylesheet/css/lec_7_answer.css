@@ -1,0 +1,29 @@
+/* line 27, ../sass/lec_7_answer.scss */
+header {
+  background: #1ABC9C;
+}
+/* line 29, ../sass/lec_7_answer.scss */
+header .header-content .header-content-inner h1 {
+  margin-bottom: 20px;
+}
+
+/* line 34, ../sass/lec_7_answer.scss */
+.game-sec {
+  padding: 0px 30px 20px 30px;
+}
+
+/* line 40, ../sass/lec_7_answer.scss */
+.score-row {
+  margin-top: 30px;
+  background: #16A085;
+  color: #f2e394;
+  border: 10px solid #8b4545;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+/* line 47, ../sass/lec_7_answer.scss */
+.score-row .score {
+  font-size: 55px;
+  line-height: 80px;
+  vertical-align: middle;
+}

@@ -118,7 +118,9 @@ function game_reset() {
 	first = "";
 	second = "";
 	ans = new Array();
-	$("#lines-"+current_section).html("");
+	$("#lines-1").html("");
+	$("#lines-2").html("");
+	$("#lines-3").html("");
 }
 
 function submit_answer(btn) {

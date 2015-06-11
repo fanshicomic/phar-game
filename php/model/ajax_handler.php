@@ -17,9 +17,17 @@
 		} else if ($lecture == "3") {
 
 		} else if ($lecture == "4") {
-			$ans = json_decode($_REQUEST['ans'], true);
-			$score = calculate_game4_score($ans);
+			$ans = urldecode($_REQUEST['ans']);
+    		$ans = json_decode($ans, true);
+    		$score = calculate_game4_score($ans);
 			echo update_game_score($lecture, $score);
+		} else if ($lecture == "7") {
+			$ans = urldecode($_REQUEST['ans']);
+    		$ans = json_decode($ans, true);
+    		$score = calculate_game7_score($ans);
+			echo update_game_score($lecture, $score);
+		} else {
+
 		}
 	}
 ?>
