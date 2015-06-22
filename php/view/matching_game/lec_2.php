@@ -39,8 +39,8 @@
     <link rel="stylesheet" href="/pharmacology/games/stylesheet/css/creative.css" type="text/css">
 
     <!-- SweetAlert -->
-    <script src="../../../plugin/SweetAlert/sweetalert.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="../../../plugin/SweetAlert/sweetalert.css">
+    <script src="/pharmacology/games/plugin/SweetAlert/sweetalert.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="/pharmacology/games/plugin/SweetAlert/sweetalert.css">
 
 	<!-- Customized Stylesheet -->
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/font.css">
