@@ -1,27 +1,20 @@
 /*
-		Default puzzle styling
-	*/
-/* line 4, ../sass/puzzle.scss */
-body {
-  font: 62.5%/1.3em Helvetica, sans-serif;
-  width: 80%;
-  margin: 10px auto;
+	Default puzzle styling
+*/
+/* line 9, ../sass/puzzle.scss */
+header .header-content .header-content-inner p {
+  margin-bottom: 0;
 }
 
-/* line 9, ../sass/puzzle.scss */
+/* line 13, ../sass/puzzle.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  max-width: 100%;
+  width: 100%;
 }
 
-/* line 14, ../sass/puzzle.scss */
-table tr {
-  height: 100%;
-}
-
-/* line 18, ../sass/puzzle.scss */
-table td {
+/* line 19, ../sass/puzzle.scss */
+td {
   border: 1px solid #BDC3C7;
   padding: 0;
   margin: 0;
@@ -29,7 +22,7 @@ table td {
   position: relative;
 }
 
-/* line 26, ../sass/puzzle.scss */
+/* line 27, ../sass/puzzle.scss */
 td .content {
   position: absolute;
   top: 0;
@@ -39,24 +32,47 @@ td .content {
   background: gold;
 }
 
-/* line 35, ../sass/puzzle.scss */
+/* line 42, ../sass/puzzle.scss */
 td input {
   width: 100%;
   height: 100%;
   padding: 0em;
   border: none;
   text-align: center;
-  font-size: 3em;
   color: #666;
   background-color: #f4f4f4;
 }
+@media screen and (max-width: 320px) {
+  /* line 42, ../sass/puzzle.scss */
+  td input {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* line 42, ../sass/puzzle.scss */
+  td input {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 42, ../sass/puzzle.scss */
+  td input {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 42, ../sass/puzzle.scss */
+  td input {
+    font-size: 1.6em;
+  }
+}
 
-/* line 46, ../sass/puzzle.scss */
+/* line 64, ../sass/puzzle.scss */
 td input:focus {
   background-color: #fff;
 }
 
-/* line 50, ../sass/puzzle.scss */
+/* line 68, ../sass/puzzle.scss */
 td span {
   color: #444;
   font-size: 0.8em;
@@ -65,40 +81,34 @@ td span {
   left: 1px;
 }
 
-/* line 58, ../sass/puzzle.scss */
+/* line 76, ../sass/puzzle.scss */
 input.done {
   font-weight: bold;
   color: green;
 }
 
-/* line 63, ../sass/puzzle.scss */
-.active,
-.clues-active {
-  background-color: #f9fcde;
+/* line 81, ../sass/puzzle.scss */
+.active {
+  background: #e5fcde;
 }
 
-/* line 67, ../sass/puzzle.scss */
+/* line 84, ../sass/puzzle.scss */
+.clues-active {
+  background: #16A085;
+}
+
+/* line 88, ../sass/puzzle.scss */
 .clue-done {
   color: #999;
   text-decoration: line-through;
 }
 
-/* line 72, ../sass/puzzle.scss */
+/* line 93, ../sass/puzzle.scss */
 #puzzle-wrapper {
-  float: left;
-  width: 54%;
-  margin-right: 3%;
+  margin-top: 3%;
 }
 
-/* line 77, ../sass/puzzle.scss */
-#puzzle-clues {
-  float: left;
-  width: 40%;
-}
-
-/* line 82, ../sass/puzzle.scss */
+/* line 97, ../sass/puzzle.scss */
 #puzzle-clues li {
-  font-size: 1.2em;
-  margin: .3em;
-  line-height: 1.6em;
+  font-size: 1em;
 }

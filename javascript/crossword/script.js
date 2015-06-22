@@ -6,11 +6,11 @@
 		// two entries: an across entry and a down entry
 		var puzzleData = [
 			 	{
-					clue: "This drug inhibits embCAB operon encoded mycobacterial arabinosyl Transferases.",
+					clue: "This drug inhibits embCAB operon encoded mycobacterial arabinosyl transferases.",
 					answer: "ethambutol",
 					position: 1,
 					orientation: "across",
-					startx: 3,
+					startx: 1,
 					starty: 3
 				},
 			 	{
@@ -18,7 +18,7 @@
 					answer: "hepatotoxicity",
 					position: 2,
 					orientation: "across",
-					startx: 4,
+					startx: 2,
 					starty: 6
 				},
 				{
@@ -26,7 +26,7 @@
 					answer: "bacteriastatic",
 					position: 3,
 					orientation: "down",
-					startx: 8,
+					startx: 6,
 					starty: 3
 				},
 				{
@@ -34,7 +34,7 @@
 					answer: "katg",
 					position: 4,
 					orientation: "down",
-					startx: 10,
+					startx: 8,
 					starty: 1
 				},
 				{
@@ -42,7 +42,7 @@
 					answer: "rifampin",
 					position: 5,
 					orientation: "across",
-					startx: 8,
+					startx: 6,
 					starty: 8
 				},
 				{
@@ -50,16 +50,40 @@
 					answer: "meninges",
 					position: 6,
 					orientation: "down",
-					startx: 12,
+					startx: 10,
 					starty: 8
 				},
 				{
-					clue: "________ are where Rifampin are deacetylated.",
+					clue: "______ are where Rifampin are deacetylated.",
 					answer: "livers",
 					position: 7,
 					orientation: "across",
-					startx: 7,
+					startx: 5,
 					starty: 15
+				},
+				{
+					clue: "Rifampin binds to the _______ subunit of the bacterial DNA dependent RNA polymerase to inhibit RNA snythesis.",
+					answer: "beta",
+					position: 8,
+					orientation: "down",
+					startx: 8,
+					starty: 14
+				},
+				{
+					clue: "Isoniazid may induce ______, which reduces the availability of pyridoxal phosphate for the formation of nicotinic acid from tryptophan.",
+					answer: "pellagra",
+					position: 9,
+					orientation: "down",
+					startx: 4,
+					starty: 6
+				},
+				{
+					clue: "Ethambutol has an absorption rate of about __________ percent.",
+					answer: "eighty",
+					position: 10,
+					orientation: "across",
+					startx: 9,
+					starty: 11
 				}
 			] 
 	

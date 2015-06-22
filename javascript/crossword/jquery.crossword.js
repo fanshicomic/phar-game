@@ -25,7 +25,7 @@
 			
 			// append clues markup after puzzle wrapper div
 			// This should be moved into a configuration object
-			this.after('<div id="puzzle-clues"><h2>Across</h2><ul id="across"></ul><h2>Down</h2><ul id="down"></ul></div>');
+			// this.after('<div id="puzzle-clues"><h2>Across</h2><ul id="across"></ul><h2>Down</h2><ul id="down"></ul></div>');
 			
 			// initialize some variables
 			var tbl = ['<table id="puzzle">'],
@@ -241,7 +241,8 @@
 						var letters = puzz.data[x-1].answer.split('');
 
 						for (var i=0; i < entries[x-1].length; ++i) {
-							light = $(puzzCells +'[data-coords="' + entries[x-1][i] + '"]');
+							// light = $(puzzCells +'[data-coords="' + entries[x-1][i] + '"]');
+							light = $('td.content[data-coords="' + entries[x-1][i] + '"]');
 							
 							// check if POSITION property of the entry on current go-round is same as previous. 
 							// If so, it means there's an across & down entry for the position.
@@ -440,7 +441,7 @@
 					
 						util.getActivePositionFromClassGroup(e.target);
 						
-						clue = $(clueLiEls + '[data-position=' + activePosition + ']');
+						clue = $('li[data-position=' + activePosition + ']');
 						activeClueIndex = $(clueLiEls).index(clue);
 						
 						currOri = clue.parent().prop('id');
@@ -471,10 +472,10 @@
 				highlightClue: function() {
 					var clue;				
 					$('.clues-active').removeClass('clues-active');
-					$(clueLiEls + '[data-position=' + activePosition + ']').addClass('clues-active');
+					$('li[data-position=' + activePosition + ']').addClass('clues-active');
 					
 					if (mode === 'interacting') {
-						clue = $(clueLiEls + '[data-position=' + activePosition + ']');
+						clue = $('li[data-position=' + activePosition + ']');
 						activeClueIndex = $(clueLiEls).index(clue);
 					};
 				},
@@ -502,8 +503,8 @@
 
 						if(classes.length > 1){
 							// get orientation for each reported position
-							e1Ori = $(clueLiEls + '[data-position=' + classes[0].split('-')[1] + ']').parent().prop('id');
-							e2Ori = $(clueLiEls + '[data-position=' + classes[1].split('-')[1] + ']').parent().prop('id');
+							e1Ori = $('li[data-position=' + classes[0].split('-')[1] + ']').parent().prop('id');
+							e2Ori = $('li[data-position=' + classes[1].split('-')[1] + ']').parent().prop('id');
 
 							// test if clicked input is first in series. If so, and it intersects with
 							// entry of opposite orientation, switch to select this one instead

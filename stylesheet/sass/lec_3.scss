@@ -1,0 +1,58 @@
+@import "compass/css3";
+
+$break-small: 320px;
+$break-small-l: 960px;
+$break-midium: 1024px;
+$break-large: 1200px;
+
+@mixin lg {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+body {
+	background: #1ABC9C;
+}
+
+header { 
+	background: #1ABC9C;
+    @media screen and (max-width: $break-small) {
+        margin-top: 5%;
+    }
+
+    @media screen and (min-width: $break-large) {
+        margin-top: 5%;
+    }
+
+    @media screen and (min-width: $break-small-l) {
+        margin-top: 10%;
+    }
+
+    @media screen and (min-width: $break-midium) {
+        margin-top: 5%;
+    }
+    .header-content .header-content-inner h1 {
+        margin-bottom: 10px;
+    }
+    .header-content .header-content-inner p {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+/* line 31, ../sass/lec_3.scss */
+body {
+  background: #1ABC9C;
+}
+
+/* line 35, ../sass/lec_3.scss */
+header {
+  background: #1ABC9C;
+}
+@media screen and (max-width: 320px) {
+  /* line 35, ../sass/lec_3.scss */
+  header {
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 35, ../sass/lec_3.scss */
+  header {
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 35, ../sass/lec_3.scss */
+  header {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 35, ../sass/lec_3.scss */
+  header {
+    margin-top: 5%;
+  }
+}
+/* line 52, ../sass/lec_3.scss */
+header .header-content .header-content-inner h1 {
+  margin-bottom: 10px;
+}
+/* line 55, ../sass/lec_3.scss */
+header .header-content .header-content-inner p {
+  margin-bottom: 20px;
+}
