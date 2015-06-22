@@ -22,10 +22,10 @@ table tr {
 
 /* line 18, ../sass/puzzle.scss */
 table td {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #BDC3C7;
   padding: 0;
   margin: 0;
-  background-color: #333;
+  background-color: #16A085;
   position: relative;
 }
 
@@ -74,7 +74,7 @@ input.done {
 /* line 63, ../sass/puzzle.scss */
 .active,
 .clues-active {
-  background-color: #ddd;
+  background-color: #f9fcde;
 }
 
 /* line 67, ../sass/puzzle.scss */

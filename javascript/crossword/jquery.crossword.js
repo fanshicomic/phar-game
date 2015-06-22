@@ -289,7 +289,7 @@
 					
 					util.getActivePositionFromClassGroup($(e.target));
 				
-					valToCheck = puzz.data[activePosition].answer.toLowerCase();
+					valToCheck = puzz.data[activePosition - 1].answer.toLowerCase();
 
 					currVal = $('.position-' + activePosition + ' input')
 						.map(function() {
