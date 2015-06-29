@@ -39,3 +39,8 @@ header .header-content .header-content-inner h1 {
 header .header-content .header-content-inner p {
   margin-bottom: 20px;
 }
+
+/* line 60, ../sass/lec_3.scss */
+.btn.btn-submit {
+  margin-top: 11%;
+}

@@ -15,7 +15,8 @@
 			$score = calculate_game2_score($ans);
 			echo update_game_score($lecture, $score);
 		} else if ($lecture == "3") {
-
+			$score = $_REQUEST['score'];
+			echo update_game_score($lecture, $score);
 		} else if ($lecture == "4") {
 			$ans = urldecode($_REQUEST['ans']);
     		$ans = json_decode($ans, true);

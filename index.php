@@ -78,13 +78,13 @@
                         <div class="game-sec col-lg-3 text-center">
                             <img src="img/hangman-icon.png" class="game-icon">
                             <h3>Hangman</h3>
-                            <a href="/pharmacology/games/php/view/crossword/lec_3.php"><h4>Lecture 3</h4></a>
+                            
                             
                         </div>
                         <div class="game-sec col-lg-3 text-center">
                             <img src="img/crossword-icon.png" class="game-icon">
                             <h3>Crossword</h3>
-                            <a href="#"><h4>Lecture 5</h4></a>
+                            <a href="/pharmacology/games/php/view/crossword/lec_3.php"><h4>Lecture 3</h4></a>
                             <a href="#"><h4>Lecture 6</h4></a>
                         </div>
                         <div class="game-sec col-lg-3 text-center">

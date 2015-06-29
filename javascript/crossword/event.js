@@ -1,23 +1,69 @@
-var answer = 0;
+var score = 0;
+var countdown;
 $(function() {
 	$('.btn-start').click(function() {
-		start_game();
-	})
+		start_game(this);
+	});
+	$('.btn-submit').click(function() {
+		submit_answer_alert(this);
+	});
 });
 
-function start_game() {
+function start_game(btn) {
+	var lec = $(btn).attr("lec");
 	$('#time').show();
 	$('#instruction').hide();
 	$('#div-puzzle').show();
 
 	var thirty_minutes = 60 * 30,
     display = $('#time');
-    // startTimer(thirty_minutes, display);
+    startTimer(lec, thirty_minutes, display);
 };
 
-function startTimer(duration, display) {
+function submit_answer_alert(btn) {
+	var lec = $(btn).attr("lec");
+	swal({   
+		title: "Are you sure?",   
+		text: "Your answer will be submitted, this action is irreversible.",   
+		type: "warning",   
+		showCancelButton: true,   
+		confirmButtonColor: "#DD6B55",   
+		confirmButtonText: "Yes, submit it!",   
+		closeOnConfirm: false }, 
+		function(){   
+			submit_answer(lec); 
+		});
+}
+
+function submit_answer(lec) {
+	$.ajax({
+			async	: false,
+			type	:'POST', 
+		    url		: "/pharmacology/games/php/model/ajax_handler.php",
+		    data    : {	cmd 	: 'submit_answer',
+		    		   	lecture	: lec,
+		    		    score 	: score
+		    		},
+		    success	: function(data) {
+				if (data == 1) {
+					stopTimer();
+					show_score();
+				} else {
+					swal("Error",
+						data,
+						"error");
+				}
+			}
+		});
+}
+
+function show_score() {
+	swal("Good job!", "Your score is "+ score +" !", "success");
+}
+
+function startTimer(lec, duration, display) {
     var timer = duration, minutes, seconds;
-    setInterval(function () {
+    countdown = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -27,7 +73,12 @@ function startTimer(duration, display) {
         display.text(minutes + " : " + seconds);
 
         if (--timer < 0) {
-            timer = duration;
+            window.clearInterval(countdown);
+            submit_answer(lec);
         }
     }, 1000);
+}
+
+function stopTimer() {
+	window.clearInterval(countdown);
 }
