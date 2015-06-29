@@ -1,8 +1,3 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <?php
     if(!isset($_SESSION)){
         session_start();
@@ -17,6 +12,8 @@
     }
     
 ?>
+<!doctype html>
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -47,6 +44,7 @@
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/puzzle.css">
 	<script src="/pharmacology/games/javascript/crossword/jquery.crossword.js"></script>
 	<script src="/pharmacology/games/javascript/crossword/script.js"></script>
+    <script src="/pharmacology/games/javascript/crossword/event.js"></script>
 
 </head>
 
@@ -61,7 +59,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="../../../index.php">Home</a>
+                <a class="navbar-brand page-scroll" href="/pharmacology/games/index.php">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,9 +71,15 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner container">
-                <h1>Lecture 3</h1>
-                <p class="text-left"><b style="color:white">Objective</b>: This game is to test your ability to recognize the different groups of drugs belonging to the bacterial cell wall synthesis inhibitors. The fullmark for this game is 100.</p>
-                <div class="row">
+                <h1>Lecture 3 <span id="time" class="col-xs-offset-2" style="display:none">30:00</span></h1>
+                <div id="instruction">
+                    <p class="text-left"><b style="color:white">
+                    Objective</b>: This game is to test your ability to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The fullmark for this game is 100 and you have only one attempt. </p> 
+                    <p class="text-left"><b style="color:white">Instruction</b>: The time limit is 30 minutes. Click the Start button to start the game, after 30 minutes your answer will be submitted automatically. Or you can click the Submit button to submit your answer once you have finished.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg btn-start">Start Game</a>
+                </div>
+                <div class="row" id="div-puzzle" style="display:none">
 	                <div id="puzzle-wrapper" class= "col-md-6 col-xs-12">
 
 					</div>

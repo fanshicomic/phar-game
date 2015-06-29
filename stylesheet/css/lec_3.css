@@ -10,13 +10,13 @@ header {
 @media screen and (max-width: 320px) {
   /* line 35, ../sass/lec_3.scss */
   header {
-    margin-top: 5%;
+    margin-top: 2%;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 35, ../sass/lec_3.scss */
   header {
-    margin-top: 5%;
+    margin-top: 2%;
   }
 }
 @media screen and (min-width: 960px) {
@@ -28,7 +28,7 @@ header {
 @media screen and (min-width: 1024px) {
   /* line 35, ../sass/lec_3.scss */
   header {
-    margin-top: 5%;
+    margin-top: 2%;
   }
 }
 /* line 52, ../sass/lec_3.scss */
@@ -38,4 +38,22 @@ header .header-content .header-content-inner h1 {
 /* line 55, ../sass/lec_3.scss */
 header .header-content .header-content-inner p {
   margin-bottom: 20px;
+}
+
+/* line 60, ../sass/lec_3.scss */
+#instruction {
+  margin-top: 5%;
+}
+
+/* line 64, ../sass/lec_3.scss */
+.btn {
+  margin-top: 5%;
+}
+
+/* line 68, ../sass/lec_3.scss */
+#time {
+  color: red;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
 }
