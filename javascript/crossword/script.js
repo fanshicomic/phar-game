@@ -23,7 +23,7 @@
 				},
 				{
 					clue: "Pyrazinamide is a _______ drug.",
-					answer: "bacteriastatic",
+					answer: "bacteriostatic",
 					position: 3,
 					orientation: "down",
 					startx: 6,

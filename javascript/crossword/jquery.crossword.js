@@ -287,6 +287,7 @@
 				checkAnswer: function(e) {
 					
 					var valToCheck, currVal;
+
 					
 					util.getActivePositionFromClassGroup($(e.target));
 				
@@ -302,17 +303,19 @@
 						.join('');
 					
 					//console.log(currVal + " " + valToCheck);
-					if(valToCheck === currVal){	
+					if (valToCheck === currVal){	
 						$('.active')
 							.addClass('done')
-							.removeClass('active');
+							.removeClass('active')
+							.prop("disabled", true);
 					
 						$('.clues-active').addClass('clue-done');
 
 						solved.push(valToCheck);
 						solvedToggle = true;
+						answer += 1;
 						return;
-					}
+					} 
 					
 					currOri === 'across' ? nav.nextPrevNav(e, 39) : nav.nextPrevNav(e, 40);
 					
@@ -348,8 +351,18 @@
 					//console.log('nextPrevNav activePosition & struck: '+ activePosition + ' '+struck);
 						
 					// move input focus/select to 'next' input
+					
+					this.findNextPrevNav(p, ps, struck, selector);										
+				},
+
+				findNextPrevNav: function(p, ps, struck, selector) {
 					switch(struck) {
 						case 39:
+							var nextInput = p.next().find('input');
+							if (nextInput.attr('disabled')) {
+								this.findNextPrevNav(nextInput.parent(), ps, struck, selector);
+								return ;
+							}
 							p
 								.next()
 								.find('input')
@@ -359,6 +372,11 @@
 							break;
 						
 						case 37:
+							var nextInput = p.prev().find('input');
+							if (nextInput.attr('disabled')) {
+								this.findNextPrevNav(nextInput.parent(), ps, struck, selector);
+								return ;
+							}
 							p
 								.prev()
 								.find('input')
@@ -368,6 +386,11 @@
 							break;
 
 						case 40:
+							var nextInput = ps.next('tr').find(selector);
+							if (nextInput.attr('disabled')) {
+								this.findNextPrevNav(p, nextInput.parent().parent(), struck, selector);
+								return ;
+							}
 							ps
 								.next('tr')
 								.find(selector)
@@ -377,6 +400,11 @@
 							break;
 
 						case 38:
+							var nextInput = ps.prev('tr').find(selector);
+							if (nextInput.attr('disabled')) {
+								this.findNextPrevNav(p, nextInput.parent().parent(), struck, selector);
+								return ;
+							}
 							ps
 								.prev('tr')
 								.find(selector)
@@ -388,7 +416,6 @@
 						default:
 						break;
 					}
-															
 				},
 	
 				updateByNav: function(e) {

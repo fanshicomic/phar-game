@@ -112,3 +112,21 @@ input.done {
 #puzzle-clues li {
   font-size: 1em;
 }
+
+/* line 101, ../sass/puzzle.scss */
+#instruction {
+  margin-top: 5%;
+}
+
+/* line 105, ../sass/puzzle.scss */
+.btn {
+  margin-top: 5%;
+}
+
+/* line 109, ../sass/puzzle.scss */
+#time {
+  color: red;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+}

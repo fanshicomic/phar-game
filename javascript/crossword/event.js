@@ -1,3 +1,4 @@
+var answer = 0;
 $(function() {
 	$('.btn-start').click(function() {
 		start_game();
@@ -11,7 +12,7 @@ function start_game() {
 
 	var thirty_minutes = 60 * 30,
     display = $('#time');
-    startTimer(thirty_minutes, display);
+    // startTimer(thirty_minutes, display);
 };
 
 function startTimer(duration, display) {
@@ -23,7 +24,7 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.text(minutes + ":" + seconds);
+        display.text(minutes + " : " + seconds);
 
         if (--timer < 0) {
             timer = duration;

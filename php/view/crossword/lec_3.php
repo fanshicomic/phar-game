@@ -71,7 +71,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner container">
-                <h1>Lecture 3 <span id="time" class="col-xs-offset-2" style="display:none">30:00</span></h1>
+                <h1>Lecture 3 <span id="time" class="col-xs-offset-2" style="display:none">30 : 00</span></h1>
                 <div id="instruction">
                     <p class="text-left"><b style="color:white">
                     Objective</b>: This game is to test your ability to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The fullmark for this game is 100 and you have only one attempt. </p> 
