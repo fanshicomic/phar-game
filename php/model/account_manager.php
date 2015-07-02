@@ -50,4 +50,15 @@
 			}
 		}
 	}
+
+	if ($command == 'redirect') {
+		if (isset($_SESSION['redirect'])) {
+			$addr = $_SESSION['redirect'];
+			$_SESSION['redirect'] = '';
+			echo $addr;
+		} else {
+			$addr = '/pharmacology/games/index.php';
+			echo $addr;
+		}
+	}
 ?>

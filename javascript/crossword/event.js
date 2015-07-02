@@ -15,9 +15,10 @@ function start_game(btn) {
 	$('#instruction').hide();
 	$('#div-puzzle').show();
 
-	var thirty_minutes = 60 * 30,
+	// the time limit for the game
+	var time_limit = 60 * 30,
     display = $('#time');
-    startTimer(lec, thirty_minutes, display);
+    startTimer(lec, time_limit, display);
 };
 
 function submit_answer_alert(btn) {

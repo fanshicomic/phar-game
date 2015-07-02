@@ -8,6 +8,7 @@
     if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
          
     } else {
+        $_SESSION['redirect'] = $_SESSION['PATH'].'/php/view/matching_game/lec_3.php';
         header("Location: /pharmacology/games/php/view/signin.php");
     }
     

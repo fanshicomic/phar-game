@@ -14,7 +14,7 @@
 					starty: 3
 				},
 			 	{
-					clue: "Pyrazinamide may cause _________ and ____________.",
+					clue: "Pyrazinamide may cause _________ and hyperuricaemia.",
 					answer: "hepatotoxicity",
 					position: 2,
 					orientation: "across",

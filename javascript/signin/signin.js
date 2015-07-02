@@ -7,13 +7,10 @@ $(function() {
 function signin() {
 	var id = $('#signin-user-id').val();
 	var password = $('#signin-user-password').val();
-	console.log(password);
 	if (is_valid_password(id, password)) {
-		console.log('valid');
 		$('#warning-msg').html('');
 		signin_and_redirect_user(id);
 	} else {
-		console.log('Invalid');
 		$('#warning-msg').html('Invalid User Name or Password');
 		$('#warning-msg').css('color', 'red');
 	}
@@ -49,11 +46,23 @@ function signin_and_redirect_user(id) {
     			   		 id: id},
     	success	: function(data) {
     		if (data == 1) {
-    			window.location.href= '../../index.php';
+    			redirect();
     		} else {
     			$('#warning-msg').html('You have alerady logged in, please log out first.');
 				$('#warning-msg').css('color', 'red');
     		}
 		}
 	});
+}
+
+function redirect() {
+	$.ajax({
+		async	: false,
+		type	:'POST', 
+    	url		: "/pharmacology/games/php/model/account_manager.php",
+    	data    : {command : 'redirect'},
+    	success	: function(data) {
+    	    window.location.href= data;
+    	}
+    });
 }
