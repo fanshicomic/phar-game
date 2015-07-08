@@ -1,4 +1,5 @@
 // A javascript-enhanced crossword puzzle [c] Jesse Weisbeck, MIT/GPL 
+var score = 0;
 (function($) {
 	$(function() {
 		// provide crossword entries in an array of objects like the following example
@@ -54,19 +55,19 @@
 					starty: 8
 				},
 				{
-					clue: "______ are where Rifampin are deacetylated.",
-					answer: "livers",
+					clue: "Pyrazinamide is converted to active form under ______ conditions.",
+					answer: "acidic",
 					position: 7,
-					orientation: "across",
-					startx: 5,
-					starty: 15
+					orientation: "down",
+					startx: 12,
+					starty: 1
 				},
 				{
 					clue: "Rifampin binds to the _______ subunit of the bacterial DNA dependent RNA polymerase to inhibit RNA snythesis.",
 					answer: "beta",
 					position: 8,
-					orientation: "down",
-					startx: 8,
+					orientation: "across",
+					startx: 9,
 					starty: 14
 				},
 				{

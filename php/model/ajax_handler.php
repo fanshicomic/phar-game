@@ -9,7 +9,8 @@
 	if ($cmd == 'submit_answer') {
 		$lecture = secureString($_REQUEST['lecture']);
 		if ($lecture == "1") {
-
+			$score = $_REQUEST['score'];
+			echo update_game_score($lecture, $score);
 		} else if ($lecture == "2") {
 			$ans = json_decode($_REQUEST['ans'], true);
 			$score = calculate_game2_score($ans);
@@ -21,6 +22,12 @@
 			$ans = urldecode($_REQUEST['ans']);
     		$ans = json_decode($ans, true);
     		$score = calculate_game4_score($ans);
+			echo update_game_score($lecture, $score);
+		} else if ($lecture == "5") {
+			$score = $_REQUEST['score'];
+			echo update_game_score($lecture, $score);
+		} else if ($lecture == "6") {
+			$score = $_REQUEST['score'];
 			echo update_game_score($lecture, $score);
 		} else if ($lecture == "7") {
 			$ans = urldecode($_REQUEST['ans']);

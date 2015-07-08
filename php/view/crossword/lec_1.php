@@ -8,7 +8,7 @@
     if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
          
     } else {
-        $_SESSION['redirect'] = $_SESSION['PATH'].'/php/view/crossword/lec_3.php';
+        $_SESSION['redirect'] = $_SESSION['PATH'].'/php/view/crossword/lec_1.php';
         header("Location: /pharmacology/games/php/view/signin.php");
     }
     
@@ -18,7 +18,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>lecture 3 crossword game</title>
+	<title>lecture 1 crossword game</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<!-- JQuery -->
 	<script src="/pharmacology/games/plugin/jQuery/jquery-2.1.3.min.js"></script>
@@ -41,10 +41,10 @@
 
 	<!-- Customized Stylesheet -->
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/font.css">
-	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/lec_3.css">
+	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/lec_1.css">
 	<link type="text/css" rel="stylesheet" href="/pharmacology/games/stylesheet/css/puzzle.css">
 	<script src="/pharmacology/games/javascript/crossword/jquery.crossword.js"></script>
-	<script src="/pharmacology/games/javascript/crossword/script_3.js"></script>
+	<script src="/pharmacology/games/javascript/crossword/script_1.js"></script>
     <script src="/pharmacology/games/javascript/crossword/event.js"></script>
 
 </head>
@@ -72,24 +72,24 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner container">
-                <h1>Lecture 3 <span id="time" class="col-xs-offset-2" style="display:none">30 : 00</span></h1>
+                <h1>Lecture 1 <span id="time" class="col-xs-offset-2" style="display:none">30 : 00</span></h1>
                 <div id="instruction">
                     <p class="text-left"><b style="color:white">
                     Objective</b>: This game is to test your ability to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The fullmark for this game is 100 and you have only one attempt. </p> 
                     <p class="text-left"><b style="color:white">Instruction</b>: The time limit is 30 minutes. Click the Start button to start the game, after 30 minutes your answer will be submitted automatically. Or you can click the Submit button to submit your answer once you have finished.
                     </p>
-                    <a href="#" class="btn btn-primary btn-lg btn-start" lec="3">Start Game</a>
+                    <a href="#" class="btn btn-primary btn-lg btn-start" lec="1">Start Game</a>
                 </div>
                 <div class="row" id="div-puzzle" style="display:none">
-	                <div id="puzzle-wrapper" class= "col-md-7 col-xs-12">
+	                <div id="puzzle-wrapper" class= "col-md-6 col-xs-12">
 
 					</div>
-					<div id="puzzle-clues" class="col-md-5 col-xs-12">
+					<div id="puzzle-clues" class="col-md-6 col-xs-12">
 						<h2>Across</h2>
 						<ul id="across" class= "text-left" class="col-md-3 col-xs-12"></ul>
 						<h2>Down</h2>
 						<ul id="down" class= "text-left" class="col-md-3 col-xs-12"></ul>
-                        <a href="#" class="btn btn-primary btn-lg btn-submit" lec="3">Submit</a>
+                        <a href="#" class="btn btn-primary btn-lg btn-submit" lec="1">Submit</a>
 					</div>
 				</div>
 			</div>

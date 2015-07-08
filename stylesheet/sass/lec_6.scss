@@ -58,31 +58,31 @@ header {
 }
 
 .btn.btn-submit {
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 #puzzle-clues li{
-	font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 td input {
-		width: 100%;
-		height: 100%;
-		padding: 0em;
-		border: none;
-		text-align: center;
-		color: #666;
-		background-color: #f4f4f4;
-		@media screen and (max-width: $break-small) {
-			font-size: 0.9em;
-		}
-		@media screen and (max-width: $break-small-l) {
-			font-size: 1.2em;
-		}
-		@media screen and (min-width: $break-midium) {
-			font-size: 1.2em;
-		}
-		@media screen and (min-width: $break-large) {
-			font-size: 1.4em;
-		}
-	}
+        width: 100%;
+        height: 100%;
+        padding: 0em;
+        border: none;
+        text-align: center;
+        color: #666;
+        background-color: #f4f4f4;
+        @media screen and (max-width: $break-small) {
+            font-size: 1em;
+        }
+        @media screen and (max-width: $break-small-l) {
+            font-size: 1.4em;
+        }
+        @media screen and (min-width: $break-midium) {
+            font-size: 1.4em;
+        }
+        @media screen and (min-width: $break-large) {
+            font-size: 1.6em;
+        }
+    }

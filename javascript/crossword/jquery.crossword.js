@@ -313,7 +313,7 @@
 
 						solved.push(valToCheck);
 						solvedToggle = true;
-						score += 1;
+						score += 10;
 						return;
 					} 
 					

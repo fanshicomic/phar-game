@@ -1,4 +1,3 @@
-var score = 0;
 var countdown;
 $(function() {
 	$('.btn-start').click(function() {
@@ -31,7 +30,8 @@ function submit_answer_alert(btn) {
 		confirmButtonColor: "#DD6B55",   
 		confirmButtonText: "Yes, submit it!",   
 		closeOnConfirm: false }, 
-		function(){   
+		function(){
+			$(btn).addClass("not-active");   
 			submit_answer(lec); 
 		});
 }

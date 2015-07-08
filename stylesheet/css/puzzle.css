@@ -33,46 +33,11 @@ td .content {
 }
 
 /* line 42, ../sass/puzzle.scss */
-td input {
-  width: 100%;
-  height: 100%;
-  padding: 0em;
-  border: none;
-  text-align: center;
-  color: #666;
-  background-color: #f4f4f4;
-}
-@media screen and (max-width: 320px) {
-  /* line 42, ../sass/puzzle.scss */
-  td input {
-    font-size: 1em;
-  }
-}
-@media screen and (max-width: 960px) {
-  /* line 42, ../sass/puzzle.scss */
-  td input {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1024px) {
-  /* line 42, ../sass/puzzle.scss */
-  td input {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 42, ../sass/puzzle.scss */
-  td input {
-    font-size: 1.6em;
-  }
-}
-
-/* line 64, ../sass/puzzle.scss */
 td input:focus {
   background-color: #fff;
 }
 
-/* line 68, ../sass/puzzle.scss */
+/* line 46, ../sass/puzzle.scss */
 td span {
   color: #444;
   font-size: 0.8em;
@@ -81,52 +46,53 @@ td span {
   left: 1px;
 }
 
-/* line 76, ../sass/puzzle.scss */
+/* line 54, ../sass/puzzle.scss */
 input.done {
   font-weight: bold;
   color: green;
 }
 
-/* line 81, ../sass/puzzle.scss */
+/* line 59, ../sass/puzzle.scss */
 .active {
   background: #e5fcde;
 }
 
-/* line 84, ../sass/puzzle.scss */
+/* line 62, ../sass/puzzle.scss */
 .clues-active {
   background: #16A085;
 }
 
-/* line 88, ../sass/puzzle.scss */
+/* line 66, ../sass/puzzle.scss */
 .clue-done {
   color: #999;
   text-decoration: line-through;
 }
 
-/* line 93, ../sass/puzzle.scss */
+/* line 71, ../sass/puzzle.scss */
 #puzzle-wrapper {
   margin-top: 3%;
 }
 
-/* line 97, ../sass/puzzle.scss */
-#puzzle-clues li {
-  font-size: 1em;
-}
-
-/* line 101, ../sass/puzzle.scss */
+/* line 75, ../sass/puzzle.scss */
 #instruction {
   margin-top: 5%;
 }
 
-/* line 105, ../sass/puzzle.scss */
+/* line 79, ../sass/puzzle.scss */
 .btn {
   margin-top: 5%;
 }
 
-/* line 109, ../sass/puzzle.scss */
+/* line 83, ../sass/puzzle.scss */
 #time {
   color: red;
   background: rgba(255, 255, 255, 0.3);
   padding: 0px 10px 0px 10px;
   border-radius: 10px;
+}
+
+/* line 90, ../sass/puzzle.scss */
+.not-active {
+  pointer-events: none;
+  cursor: default;
 }

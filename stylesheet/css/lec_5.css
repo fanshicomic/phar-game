@@ -1,56 +1,56 @@
-/* line 31, ../sass/lec_3.scss */
+/* line 31, ../sass/lec_5.scss */
 body {
   background: #1ABC9C;
 }
 
-/* line 35, ../sass/lec_3.scss */
+/* line 35, ../sass/lec_5.scss */
 header {
   background: #1ABC9C;
 }
 @media screen and (max-width: 320px) {
-  /* line 35, ../sass/lec_3.scss */
+  /* line 35, ../sass/lec_5.scss */
   header {
     margin-top: 2%;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 35, ../sass/lec_3.scss */
+  /* line 35, ../sass/lec_5.scss */
   header {
     margin-top: 2%;
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 35, ../sass/lec_3.scss */
+  /* line 35, ../sass/lec_5.scss */
   header {
     margin-top: 10%;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 35, ../sass/lec_3.scss */
+  /* line 35, ../sass/lec_5.scss */
   header {
     margin-top: 2%;
   }
 }
-/* line 52, ../sass/lec_3.scss */
+/* line 52, ../sass/lec_5.scss */
 header .header-content .header-content-inner h1 {
   margin-bottom: 10px;
 }
-/* line 55, ../sass/lec_3.scss */
+/* line 55, ../sass/lec_5.scss */
 header .header-content .header-content-inner p {
   margin-bottom: 20px;
 }
 
-/* line 60, ../sass/lec_3.scss */
+/* line 60, ../sass/lec_5.scss */
 .btn.btn-submit {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
-/* line 64, ../sass/lec_3.scss */
+/* line 64, ../sass/lec_5.scss */
 #puzzle-clues li {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
-/* line 68, ../sass/lec_3.scss */
+/* line 68, ../sass/lec_5.scss */
 td input {
   width: 100%;
   height: 100%;
@@ -61,26 +61,26 @@ td input {
   background-color: #f4f4f4;
 }
 @media screen and (max-width: 320px) {
-  /* line 68, ../sass/lec_3.scss */
+  /* line 68, ../sass/lec_5.scss */
   td input {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 960px) {
-  /* line 68, ../sass/lec_3.scss */
+  /* line 68, ../sass/lec_5.scss */
   td input {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 68, ../sass/lec_3.scss */
+  /* line 68, ../sass/lec_5.scss */
   td input {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 68, ../sass/lec_3.scss */
+  /* line 68, ../sass/lec_5.scss */
   td input {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 }
