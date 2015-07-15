@@ -71,17 +71,18 @@
                         <div class="game-sec col-lg-6 text-center">
                             <img src="img/matching-icon.png" class="game-icon">
                             <h3>Matching game</h3>
-                            <a href="/pharmacology/games/php/view/matching_game/lec_2.php"><h4>Lecture 2 Inhibitors of bacteria cell wall synthesis</h4></a>
-                            <a href="/pharmacology/games/php/view/matching_game/lec_4.php"><h4>Lecture 4 Antifolate and DNA synthesis inhibitors</h4></a>
-                            <a href="/pharmacology/games/php/view/matching_game/lec_7.php"><h4>Lecture 7 Anti-viral agents</h4></a>
+                            <a href="/pharmacology/games/php/view/matching_game/lec_2.php"><h4>Inhibitors of Bacterial Cell Wall Synthesis</h4></a>
+                            <a href="/pharmacology/games/php/view/matching_game/lec_4.php"><h4> Antifolate and DNA Synthesis Inhibitors 
+                                      (Urinary Antiseptics)</h4></a>
+                            <a href="/pharmacology/games/php/view/matching_game/lec_7.php"><h4>Anti-HIV Drugs</h4></a>
                         </div>
                         <div class="game-sec col-lg-6 text-center">
                             <img src="img/crossword-icon.png" class="game-icon">
                             <h3>Crossword</h3>
-                            <a href="/pharmacology/games/php/view/crossword/lec_1.php"><h4>Lecture 1</h4></a>
-                            <a href="/pharmacology/games/php/view/crossword/lec_3.php"><h4>Lecture 3</h4></a>
-                            <a href="/pharmacology/games/php/view/crossword/lec_5.php"><h4>Lecture 5 Anti-tuberculosis agents</h4></a>
-                            <a href="/pharmacology/games/php/view/crossword/lec_6.php"><h4>Lecture 6 Anti-fungal and antiprotozoal agents</h4></a>
+                            <a href="/pharmacology/games/php/view/crossword/lec_1.php"><h4>Anti-HSV Drugs</h4></a>
+                            <a href="/pharmacology/games/php/view/crossword/lec_3.php"><h4>Antifungal and Antiprotozoal agents (part 1)</h4></a>
+                            <a href="/pharmacology/games/php/view/crossword/lec_5.php"><h4>Anti-Tuberculosis Agents</h4></a>
+                            <a href="/pharmacology/games/php/view/crossword/lec_6.php"><h4>Antifungal and Antiprotozoal agents (part 2)</h4></a>
                         </div>
                     </div>
             </div>

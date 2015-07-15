@@ -74,9 +74,10 @@
             <div class="header-content-inner container">
                 <h1>Lecture 5 <span id="time" class="col-xs-offset-2" style="display:none">30 : 00</span></h1>
                 <div id="instruction">
-                    <p class="text-left"><b style="color:white">
-                    Objective</b>: This game is to test your ability to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The fullmark for this game is 100 and you have only one attempt. </p> 
-                    <p class="text-left"><b style="color:white">Instruction</b>: The time limit is 30 minutes. Click the Start button to start the game, after 30 minutes your answer will be submitted automatically. Or you can click the Submit button to submit your answer once you have finished.
+                    <p class="text-left">
+                        <b style="color:white">Objective</b>: This game is to test your understanding on Tuberculosis and tuberculosis treatments. We will go into detail about some of the specific drugs and/or diseases that you have covered in your lecture. All of the answers can be found in your lecture notes if you take some time to search for them. This is an open book quiz, and the full score is 100 marks.
+                    </p> 
+                    <p class="text-left"><b style="color:white">Instruction</b>: Type the letters into the boxes corresponding to the hints provided and their numbers. Type one letter at a time otherwise the keystrokes may not be recorded. If there is an intersection where one box is already filled, you may skip typing that letter and continue with the word. The time limit is 30 minutes. Click the Start button to start the game, after 30 minutes your answer will be submitted automatically. Or you can click the Submit button to submit your answer once you have finished. Once you have keyed in a correct answer, the hint will be crossed out automatically.
                     </p>
                     <a href="#" class="btn btn-primary btn-lg btn-start" lec="5">Start Game</a>
                 </div>
