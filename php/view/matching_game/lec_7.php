@@ -250,8 +250,9 @@
                     </div>
                 </div>
                 <div class="row btn-row">
-                    <a href="#" class="col-xs-offset-3 col-xs-2 btn btn-default btn-lg btn-reset">Reset</a>
-                    <a href="#" class="col-xs-offset-2 col-xs-2 btn btn-primary btn-lg btn-submit" lec="7">Submit</a>
+                    <a href="#" class="col-xs-offset-2 col-xs-2 btn btn-default btn-lg btn-reset">Reset</a>
+                    <a href="#" class="col-xs-offset-1 col-xs-2 btn btn-default btn-lg btn-undo">Undo</a>
+                    <a href="#" class="col-xs-offset-1 col-xs-2 btn btn-primary btn-lg btn-submit" lec="2">Submit</a>
                 </div>   
             </div>
         </div>

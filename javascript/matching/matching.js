@@ -13,6 +13,9 @@ $(function() {
 	$(".btn-reset").click(function() {
 		game_reset();
 	});
+	$(".btn-undo").click(function() {
+		game_undo();
+	})
 	$(".btn-submit").click(function() {
 		submit_answer(this);
 	});
@@ -121,6 +124,13 @@ function game_reset() {
 	$("#lines-1").html("");
 	$("#lines-2").html("");
 	$("#lines-3").html("");
+}
+
+function game_undo() {
+	var last_step = ans.pop();
+	var sub = last_step[0];
+	var exp = last_step[1];
+	$("#myLine-" + sub + exp).remove();
 }
 
 function submit_answer(btn) {
