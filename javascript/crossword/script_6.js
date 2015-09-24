@@ -7,7 +7,7 @@ var score = 0;
 		// two entries: an across entry and a down entry
 		var puzzleData = [
 			 	{
-					clue: "Itraconazole may sometimes cause __________.",
+					clue: "Itraconazole may sometimes cause _____.",
 					answer: "headache",
 					position: 1,
 					orientation: "across",
@@ -15,7 +15,7 @@ var score = 0;
 					starty: 1
 				},
 			 	{
-					clue: "Polyenes have strong affinity for _________.",
+					clue: "Polyenes have strong affinity for _____.",
 					answer: "ergosterol",
 					position: 2,
 					orientation: "down",
@@ -23,7 +23,7 @@ var score = 0;
 					starty: 1
 				},
 				{
-					clue: "Medicine that are applied on the skin and/or mucous membrane are ____________.",
+					clue: "Medicine that are applied on the skin and/or mucous membrane are _____.",
 					answer: "topical",
 					position: 3,
 					orientation: "across",
@@ -31,7 +31,7 @@ var score = 0;
 					starty: 4
 				},
 				{
-					clue: "An example of a Polyene is ____________ B.",
+					clue: "An example of a Polyene is _____ B.",
 					answer: "amphotericin",
 					position: 4,
 					orientation: "across",
@@ -39,7 +39,7 @@ var score = 0;
 					starty: 6
 				},
 				{
-					clue: "Echinocandins should be avoided when the patient is _________.",
+					clue: "Echinocandins should be avoided when the patient is _____.",
 					answer: "pregnant",
 					position: 5,
 					orientation: "across",
@@ -47,7 +47,7 @@ var score = 0;
 					starty: 8
 				},
 				{
-					clue: "One example of a Pyrimidine analogue is __________.",
+					clue: "One example of a Pyrimidine analogue is _____.",
 					answer: "flucytosine",
 					position: 6,
 					orientation: "across",
@@ -55,15 +55,15 @@ var score = 0;
 					starty: 10
 				},
 				{
-					clue: "Ingesting E. histolytica cysts from contaminated food or water can lead to ________.",
-					answer: "amebiasis",
+					clue: "Ingesting E. histolytica cysts from contaminated food or water can lead to _____.",
+					answer: "amoebiasis",
 					position: 7,
 					orientation: "down",
 					startx: 1,
 					starty: 1
 				},
 				{
-					clue: "Cell wall synthesis is affected by ____________.",
+					clue: "_____ is an inhibitor of β(1–3)-glucan synthesis and it will disrupt of the fungal cell wall and cell death.",
 					answer: "caspofungin",
 					position: 8,
 					orientation: "down",
@@ -79,7 +79,7 @@ var score = 0;
 					starty: 6
 				},
 				{
-					clue: "Fungal Growths may cause ______ Itch.",
+					clue: "Fungal Growths may cause _____ Itch.",
 					answer: "jock",
 					position: 10,
 					orientation: "across",

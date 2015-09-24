@@ -82,13 +82,13 @@
                     <a href="#" class="btn btn-primary btn-lg btn-start" lec="5">Start Game</a>
                 </div>
                 <div class="row" id="div-puzzle" style="display:none">
-	                <div id="puzzle-wrapper" class= "col-md-6 col-xs-12">
+	                <div id="puzzle-wrapper" class= "col-md-5 col-xs-12">
 
 					</div>
-					<div id="puzzle-clues" class="col-md-6 col-xs-12">
-						<h2>Across</h2>
+					<div id="puzzle-clues" class="col-md-7 col-xs-12">
+						<h3>Across</h3>
 						<ul id="across" class= "text-left" class="col-md-3 col-xs-12"></ul>
-						<h2>Down</h2>
+						<h3>Down</h3>
 						<ul id="down" class= "text-left" class="col-md-3 col-xs-12"></ul>
                         <a href="#" class="btn btn-primary btn-lg btn-submit" lec="5">Submit</a>
 					</div>

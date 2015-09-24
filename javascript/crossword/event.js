@@ -59,7 +59,7 @@ function submit_answer(lec) {
 }
 
 function show_score() {
-	swal("Good job!", "Your score is "+ score +" !", "success");
+	swal("Time's Up!", "Your score is "+ score +" .", "success");
 }
 
 function startTimer(lec, duration, display) {

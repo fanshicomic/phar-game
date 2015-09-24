@@ -87,9 +87,9 @@
 
 					</div>
 					<div id="puzzle-clues" class="col-md-6 col-xs-12">
-						<h2>Across</h2>
+						<h3>Across</h3>
 						<ul id="across" class= "text-left" class="col-md-3 col-xs-12"></ul>
-						<h2>Down</h2>
+						<h3>Down</h3>
 						<ul id="down" class= "text-left" class="col-md-3 col-xs-12"></ul>
                         <a href="#" class="btn btn-primary btn-lg btn-submit" lec="6">Submit</a>
 					</div>

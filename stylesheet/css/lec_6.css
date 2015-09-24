@@ -42,12 +42,12 @@ header .header-content .header-content-inner p {
 
 /* line 60, ../sass/lec_6.scss */
 .btn.btn-submit {
-  margin-top: 7%;
+  margin-top: 3%;
 }
 
 /* line 64, ../sass/lec_6.scss */
 #puzzle-clues li {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 /* line 68, ../sass/lec_6.scss */
@@ -63,24 +63,24 @@ td input {
 @media screen and (max-width: 320px) {
   /* line 68, ../sass/lec_6.scss */
   td input {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 960px) {
   /* line 68, ../sass/lec_6.scss */
   td input {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1024px) {
   /* line 68, ../sass/lec_6.scss */
   td input {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 68, ../sass/lec_6.scss */
   td input {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }

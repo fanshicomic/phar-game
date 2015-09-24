@@ -42,12 +42,12 @@ header .header-content .header-content-inner p {
 
 /* line 60, ../sass/lec_3.scss */
 .btn.btn-submit {
-  margin-top: 5%;
+  margin-top: 0.9%;
 }
 
 /* line 64, ../sass/lec_3.scss */
 #puzzle-clues li {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 /* line 68, ../sass/lec_3.scss */

@@ -58,11 +58,11 @@ header {
 }
 
 .btn.btn-submit {
-    margin-top: 15%;
+    margin-top: 1%;
 }
 
 #puzzle-clues li{
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 td input {
@@ -74,15 +74,15 @@ td input {
         color: #666;
         background-color: #f4f4f4;
         @media screen and (max-width: $break-small) {
-            font-size: 1em;
+            font-size: 0.9em;
         }
         @media screen and (max-width: $break-small-l) {
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         @media screen and (min-width: $break-midium) {
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         @media screen and (min-width: $break-large) {
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
     }

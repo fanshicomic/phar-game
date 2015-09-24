@@ -18,7 +18,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>lecture 3 crossword game</title>
+	<title>lecture 6 crossword game</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<!-- JQuery -->
 	<script src="/pharmacology/games/plugin/jQuery/jquery-2.1.3.min.js"></script>
@@ -72,7 +72,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner container">
-                <h1>Lecture 3 <span id="time" class="col-xs-offset-2" style="display:none">30 : 00</span></h1>
+                <h1>Lecture 6 <span id="time" class="col-xs-offset-2" style="display:none">30 : 00</span></h1>
                 <div id="instruction">
                     <p class="text-left">
                         <b style="color:white">Objective</b>: This game is to test your understanding on fungal/protozoal infections and anti-fungal/protozoal treatments. We will go into detail about some of the specific drugs and/or diseases that you have covered in your lecture. All of the answers can be found in your lecture notes if you take some time to search for them. This is an open book quiz, and the full score is 100 marks.
@@ -87,9 +87,9 @@
 
 					</div>
 					<div id="puzzle-clues" class="col-md-5 col-xs-12">
-						<h2>Across</h2>
+						<h3>Across</h3>
 						<ul id="across" class= "text-left" class="col-md-3 col-xs-12"></ul>
-						<h2>Down</h2>
+						<h3>Down</h3>
 						<ul id="down" class= "text-left" class="col-md-3 col-xs-12"></ul>
                         <a href="#" class="btn btn-primary btn-lg btn-submit" lec="3">Submit</a>
 					</div>
